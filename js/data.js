@@ -1,122 +1,12 @@
 /* =========================================================
    WHITEWOOD — dane świata
-   Ten plik to „kanon” strony. Edytuj tu, a strona się zaktualizuje.
+   Miejsca i słownik są w katalogu lore/ (patrz README).
+   Tu: kronika, kodeks, ludy, bestiariusz, postacie, etos.
    Źródła: Google Docs „Whitewood”, „birdfolk_architektura_v2”,
    „Jack - Vulpin” (projekt D&D Krąg Cieni).
    ========================================================= */
 
 window.WW = {};
-
-/* ---------- ATLAS: punkty na mapie (x/y w % obrazu) ---------- */
-WW.locations = [
-  {
-    id: "dab",
-    x: 40.6, y: 22.5,
-    name: "Stabilna Wyspa",
-    native: "Drengaz",
-    nativeGloss: "miejsce wielkiego drzewa",
-    kind: "Serce osady",
-    text: [
-      "Wyspa, którą utrzymał przy życiu jeden korzeń. Gdy Powódź Tysiąclecia zmyła wszystko, co nie było zakorzenione głęboko, ogromna brzoza przetrwała — jej system korzeniowy wyłapywał osady i kamienie, aż ziemia wokół stała się stała.",
-      "Drzewo rosło dalej, przybierając rozmiary i formę bliższą dębowi niż brzozie. Dziś zwane jest Brzozowym Dębem. Władza Whitewood nie została zamknięta w murach — rozproszono ją w strukturze drzewa i przestrzeni wspólnej."
-    ],
-    tags: ["Brzozowy Dąb", "Ogä", "Rada"]
-  },
-  {
-    id: "rynek",
-    x: 41, y: 58,
-    name: "Rynek",
-    native: "dontarol",
-    nativeGloss: "miejsce dawania-i-brania",
-    kind: "Handel i spotkania",
-    text: [
-      "Centralna wyspa delty, połączona mostami z każdym brzegiem. Tu krzyżują się wszystkie drogi Whitewood — i wszystkie spory.",
-      "Handel z Imperium pozostaje mocno ograniczony; od wieków najważniejszym partnerem są elfy z Wielkich Lasów. Rzemieślnicy Mapach wnieśli na targ swoją skalę jakości — od gali-katga (arcydzieło) po strigi-katga (partactwo)."
-    ],
-    tags: ["dontar", "Mapachi", "elfi kupcy"]
-  },
-  {
-    id: "nory",
-    x: 13, y: 77,
-    name: "Nory Leothernów",
-    native: "!leothern!-or tan",
-    nativeGloss: "dom Leothernów",
-    kind: "Dawna kopalnia",
-    text: [
-      "Porzucony szyb kopalniany przy granicy Lasu, odzyskany — nie wykuty — przez ród Vulpinów Leothern. W czasie Powodzi Tysiąclecia woda go ominęła, a jego drzwi pozostały otwarte dla każdego.",
-      "W zamian za schronienie Leothernowie prosili tylko o wiedzę. Tak powstała biblioteka rodu: notatki zielarskie, dawne trasy handlowe, szkice instrumentów — i skrzypce, które nie miały już do kogo wrócić."
-    ],
-    tags: ["Vulpini", "biblioteka", "Jack"]
-  },
-  {
-    id: "las",
-    x: 86.5, y: 66,
-    name: "Wielkie Elfickie Lasy",
-    native: "Drenkana",
-    nativeGloss: "Las z dawnych czasów",
-    kind: "Granica — kakren",
-    text: [
-      "Stąd wypływa rzeka, która stworzyła Whitewood. Las nie atakuje — mówi się, że po prostu nie akceptuje. Im bliżej niego, tym bogatsze złoża, i tym częstsze osuwiska, korzenie przebijające skałę, nagłe warstwy wodonośne.",
-      "Whitewood wybrało pragmatyzm: handel z elfami, choć drogi, był rozsądniejszy niż dalsze ryzyko. Granica lasu elfickiego ma w Birdfolku własne słowo — kakren, „drzewa poza kręgiem”."
-    ],
-    tags: ["elfy", "kopalnie", "aelan"]
-  },
-  {
-    id: "warownia",
-    x: 63.5, y: 64,
-    name: "Kamienna Warownia",
-    native: "—",
-    nativeGloss: "nazwa nieustalona",
-    kind: "Do opisania",
-    pending: true,
-    text: [
-      "Jedyna kamienna budowla z czerwonym dachem w delcie — wyraźnie inna niż drewniane chaty reszty osady.",
-      "W lore nie ma jeszcze opisu tego miejsca. Uzupełnij w js/data.js."
-    ],
-    tags: ["do uzupełnienia"]
-  },
-  {
-    id: "wschod",
-    x: 66, y: 46,
-    name: "Wyspa Wschodnia",
-    native: "—",
-    nativeGloss: "nazwa nieustalona",
-    kind: "Do opisania",
-    pending: true,
-    text: [
-      "Rozległa wyspa z zabudową gospodarczą, na skraju brzozowego lasu, mostem połączona z Rynkiem.",
-      "W lore nie ma jeszcze opisu tego miejsca. Uzupełnij w js/data.js."
-    ],
-    tags: ["do uzupełnienia"]
-  },
-  {
-    id: "zachod",
-    x: 23, y: 51,
-    name: "Wyspa Zachodnia",
-    native: "—",
-    nativeGloss: "nazwa nieustalona",
-    kind: "Do opisania",
-    pending: true,
-    text: [
-      "Mniejsza wyspa z gęstą zabudową, mostami spięta z Rynkiem i Stabilną Wyspą.",
-      "W lore nie ma jeszcze opisu tego miejsca. Uzupełnij w js/data.js."
-    ],
-    tags: ["do uzupełnienia"]
-  },
-  {
-    id: "delta",
-    x: 52, y: 78,
-    name: "Delta",
-    native: "silkir",
-    nativeGloss: "woda idąca",
-    kind: "Krajobraz po Powodzi",
-    text: [
-      "Przed Powodzią była tu jedna rzeka — przewidywalna, nieszeroka. Gdy wody opadły, dolina stała się deltą: kilka odnóg, a między nimi wyspy.",
-      "Bagna zniknęły z pobliża osady, ale woda „nie odeszła” — zmieniła tylko sposób istnienia. W nurtach żyją drapieżne ryby skokowe i wodne szczury, a w głębinie (lurn) — coś, czego natury nigdy nie rozstrzygnięto."
-    ],
-    tags: ["Istoty Wody", "wodne ptactwo", "lurn"]
-  }
-];
 
 /* ---------- KRONIKA ---------- */
 WW.timeline = [
@@ -239,7 +129,7 @@ WW.bestiary = [
 WW.characters = [
   { name: "Oga Kornik", race: "Loxodon", role: "Ogä — przywódca Whitewood", initial: "K", text: "Stary Loxodon, który wiedzie i zakorzenia. „Kornik” to przydomek, nie rasa — ktoś, kto nie burzy struktury, lecz drąży ją i wzmacnia od środka. Próbuje utrzymać równowagę między zwolennikami Imperium a strażnikami dawnego porządku.", quote: "kornik = ogä" },
   { name: "Alastor", race: "Zwiastun Imperium", role: "Opiekun Vetory", initial: "A", text: "Wysłannik przydzielony do sprawowania pieczy nad Vetorą. Wcielenie Whitewood okazało się trudniejsze, niż przypuszczał — nikt w osadzie nie znał języka Imperium.", quote: "inyteratoor" },
-  { name: "Aeliana", race: "Corvum", role: "Corvumka", initial: "Æ", text: "Krukowata z Whitewood. Jej imię zaczyna się od samogłoski — jeden z nielicznych wyjątków od reguł Birdfolka.", quote: "!aeliana! sal-ło: gali galsen." , pending: true },
+  { name: "Aeliana", race: "Corvum", role: "Kruczyca, muzyczka", initial: "Æ", text: "Krukowata z Whitewood, z którą Jack grał w duecie. Jej imię zaczyna się od samogłoski — jeden z nielicznych wyjątków od reguł Birdfolka.", quote: "!aeliana! sal-ło: gali galsen." },
   { name: "Jack Leothern", race: "Vulpin", role: "Mnich Otwartej Dłoni", initial: "J", text: "Lis rudy z rodu Leothernów, wychowany w norze-bibliotece. Wędrowny mediator, tancerz i bajkopisarz z kalimbą. Wyruszył, by zdobyć wiedzę potrzebną do wprowadzenia harmonii w rodzinnej wiosce.", quote: "!jack! durtan-in !leothern!" }
 ];
 
@@ -250,82 +140,6 @@ WW.ethos = [
   "schronienie traci sens, gdy staje się narzędziem wpływu",
   "im mniej mówisz o swoim znaczeniu, tym dłużej ono trwa"
 ];
-
-/* ---------- JĘZYK: słownik (słowo, znaczenie, kategoria, etymologia) ---------- */
-WW.dict = [
-  // zaimki
-  ["na","ja","zaimki",""],["ti","ty","zaimki",""],["sa","on / ona / ono","zaimki","neutralne"],
-  ["nati","my (ty i ja)","zaimki","inkluzywne"],["naor","my (bez ciebie)","zaimki","ekskluzywne"],
-  ["tior","wy","zaimki",""],["saor","oni / one","zaimki",""],
-  // kręgi i instytucje
-  ["kor","krąg","instytucje",""],["sekor","pierwszy krąg — rdzenni","instytucje",""],
-  ["tekor","drugi krąg — przyjęci w próbie","instytucje",""],["kakor","poza kręgiem","instytucje",""],
-  ["ogä","Ogä — instytucja i osoba sędziego","instytucje","rdzeń Loxodon"],
-  ["kören","wspólnota","instytucje","kor + -en"],["kösal","Rada","instytucje","krąg + mówić"],
-  ["donat","poręczyciel","instytucje","dawać + wykonawca"],["donha","poręczenie (akt)","instytucje","skamieniała fuzja"],
-  ["tekan","próba (okres)","instytucje","wspólne + tamten"],["kakat","obcy","instytucje","poza kręgiem + wykonawca"],
-  ["gorat","świadek","instytucje","widzieć + wykonawca"],["ögsal","rozstrzygnięcie","instytucje","ogä + mówić"],
-  ["lanka","zasada","instytucje","wiedzieć + dokonane"],["durol","korzeń (proces)","instytucje","trwać + miejsce"],
-  // miejsca
-  ["Sekoraz","Whitewood","miejsca","„miejsce pierwszego kręgu”"],["Drengaz","Brzozowy Dąb","miejsca","„miejsce wielkiego drzewa”"],
-  ["Drenkana","Stary Las (elficki)","miejsca","„Las z dawnych czasów”"],["Silgakana","Morze Północne","miejsca","„wielka woda dawna”"],
-  // czasowniki
-  ["es","być","czasowniki",""],["dur","żyć","czasowniki",""],["lan","wiedzieć","czasowniki",""],
-  ["gor","widzieć","czasowniki",""],["tek","słyszeć","czasowniki",""],["leh","słuchać","czasowniki",""],
-  ["sal","mówić","czasowniki",""],["kir","iść","czasowniki",""],["don","dawać","czasowniki",""],
-  ["tar","brać","czasowniki",""],["kat","robić","czasowniki",""],["nor","chcieć","czasowniki",""],
-  ["sun","czuć","czasowniki",""],["lak","łowić","czasowniki","wkład wodnych"],["dak","kuć","czasowniki","wkład Mapach"],
-  // natura
-  ["tan","dom / miejsce","natura",""],["sil","woda","natura","wkład wodnych"],["ras","ogień","natura","wkład Drapieżnych"],
-  ["dol","ziemia","natura","wkład Loxodon/Ursine"],["hen","powietrze","natura",""],["gal","dzień","natura","wkład Gallus"],
-  ["strig","noc","natura","od nazwy rasy Sów"],["rasor","słońce","natura","„wielki ognisty”"],["silor","księżyc","natura","„wielki wodny”"],
-  ["trin","gwiazda","natura",""],["dren","drzewo","natura","wkład Cervan"],["silan","brzoza","natura","„wodne drzewo”"],
-  ["karen","dąb","natura","„trwałe”"],["aelan","drzewo święte","natura","zapożyczenie elfickie"],
-  ["drenol","las","natura","„miejsce drzew”"],["kakren","granica lasu elfickiego","natura","„drzewa poza kręgiem”"],
-  ["silkir","rzeka","natura","„woda idąca”"],["dolsilga","bagno","natura","„wielka ziemia-woda”"],
-  ["silsen","źródło","natura","„woda tu się rodzi”"],["silkor","wir","natura","„wodny krąg”"],
-  ["silhen","mgła","natura",""],["henga","burza","natura",""],["silun-drenol","cisza lasu","natura","„spokój lasu”"],
-  ["lurn","głębina","natura","recesywne słowo wydr"],["olon","spokojny odcinek rzeki","natura","recesywne słowo wydr"],
-  // rodzina
-  ["donor","rodzic","rodzina","„ten, który dał”"],["donsu","dziecko","rodzina","„to, dla czego się dawało”"],
-  ["kotan","rodzeństwo","rodzina","„ci z tego samego domu”"],["durtan","ród","rodzina","„trwały dom”"],
-  ["kanat","przodek","rodzina",""],["norat","przyjaciel","rodzina","„ten, którego chce się przy sobie”"],
-  ["norel","ukochany","rodzina","sufiks dworski Vulpin"],["korat","sojusznik","rodzina",""],["lark","wróg","rodzina",""],
-  // emocje
-  ["gali","radość","emocje","gal + -i"],["strigi","smutek","emocje",""],["rasun","gniew","emocje","„ognista emocja”"],
-  ["silun","spokój","emocje","„płynąca emocja”"],["karak","strach","emocje",""],["durhen","odwaga","emocje","„życie w pełnym oddechu”"],
-  ["nork","wstyd","emocje","Lupin"],["norha","nadzieja","emocje","„chcieć ku przyszłości”"],
-  ["norgor","ciekawość","emocje","„chcieć widzieć”"],["kosun","dziękuję / współczuję","emocje","„wspólne czucie”"],
-  ["kanorel","tęsknota","emocje","„miłość z dawnych czasów”"],["gorel","fascynacja","emocje",""],
-  // czas
-  ["karkor","rok cykliczny","czas","„cztery kręgi” (Ursine)"],["durin","pokolenie","czas","„życie zakorzenione” (Tortle)"],
-  ["galha","świt","czas",""],["galsen","poranek","czas",""],["galło","zmierzch","czas",""],["strigha","wieczór","czas",""],
-  ["drenha","wiosna","czas","„drzewa nadchodzą”"],["rasgal","lato","czas","„ognisty dzień”"],
-  ["drenło","jesień","czas","„drzewa, które były”"],["silstrig","zima","czas","„wodna noc”"],
-  ["silorga","pełnia","czas",""],["silorko","nów","czas",""],
-  // rzemiosło i handel
-  ["dakur","młot","rzemiosło",""],["katat","rzemieślnik","rzemiosło",""],["karor","metal","rzemiosło",""],
-  ["gali-katga","arcydzieło","rzemiosło","„wielkie radosne robienie”"],["strigi-katga","partactwo","rzemiosło","„wielkie smutne robienie”"],
-  ["dontar","handel","rzemiosło","„dawać-brać”"],["karorko","moneta","rzemiosło","„mały metal”"],
-  ["don-strigi","łapówka","rzemiosło","„smutne dawanie”"],["dakur-ko","„tak zwany młot”","rzemiosło","ironia Mapach"],
-  // formuły
-  ["kosen","witam","formuły","„wspólnie tutaj”"],["kosen kor-su","witam w kręgu","formuły","ceremonialne"],
-  ["gali galsen","dzień dobry","formuły","„radości poranka”"],["silun strig","dobranoc","formuły","„spokoju nocy”"],
-  ["kanagor","do zobaczenia","formuły","„kiedyś zobaczę”"],["durha ti","żegnaj","formuły","„trwaj ku przyszłości”"],
-  ["silun kira-te","powodzenia","formuły","„spokoju przez drogę”"],["norha ti","proszę","formuły",""],
-  ["nork nain","przepraszam","formuły","„wstyd mój”"],["na lan","rozumiem","formuły","„ja wiem”"],
-  ["gor!","uważaj!","formuły","rozkaz"],["kosu!","pomocy!","formuły","rozkaz"],["ne-kir!","stop!","formuły","rozkaz"],
-  // imperium
-  ["inyteratoor","imperator (wymowa ptasia)","imperium","zapożyczenie"],["łyspólny","Wspólny (język)","imperium",""],
-  ["larkkat","żołnierz","imperium","„robiący wroga”"],["gorat-ir","straż","imperium","„świadkowie”"],
-  ["ne-kören","Imperium (pejoratywnie)","imperium","„nie-wspólnota”"],["sekorat","obywatel","imperium","słowo bojkotu"]
-];
-
-WW.dictCats = {
-  "wszystko": "Wszystko", "formuły": "Formuły", "instytucje": "Instytucje", "miejsca": "Miejsca",
-  "natura": "Natura", "czas": "Czas", "emocje": "Emocje", "rodzina": "Rodzina",
-  "czasowniki": "Czasowniki", "rzemiosło": "Rzemiosło", "zaimki": "Zaimki", "imperium": "Imperium"
-};
 
 /* ---------- JĘZYK: demonstracja ruchomego „!” ---------- */
 WW.emphasis = [

@@ -102,43 +102,62 @@
      ========================================================= */
   const atlas = $("#atlas"), canvas = $("#atlasCanvas"), pinsBox = $("#atlasPins"),
         panel = $("#atlasPanel"), list = $("#atlasList"), reset = $("#atlasReset");
-  let current = -1;
+  let current = -1, PLACES = [];
+  const STATUS = { "propozycja": "propozycja", "sprzeczność": "sprzeczność", "do opisania": "do opisania" };
 
-  D.locations.forEach((loc, i) => {
-    const b = el("button", "pin" + (loc.pending ? " pin--pending" : ""));
-    b.style.left = loc.x + "%"; b.style.top = loc.y + "%";
-    b.setAttribute("aria-label", loc.name);
-    b.appendChild(el("span", "pin__label", esc(loc.name)));
-    b.addEventListener("click", () => select(i));
-    pinsBox.appendChild(b);
-
-    const li = el("li"); const lb = el("button", null, esc(loc.name));
-    lb.setAttribute("aria-pressed", "false"); lb.addEventListener("click", () => select(i));
-    li.appendChild(lb); list.appendChild(li);
-  });
+  function initAtlas(places) {
+    PLACES = places;
+    places.forEach((loc, i) => {
+      const pending = loc.status !== "kanon";
+      loc.points.forEach(([x, y]) => {
+        const b = el("button", "pin" + (pending ? " pin--pending" : ""));
+        b.dataset.i = i;
+        b.style.left = x + "%"; b.style.top = y + "%";
+        b.setAttribute("aria-label", loc.name);
+        b.appendChild(el("span", "pin__label", esc(loc.name)));
+        b.addEventListener("click", () => select(i));
+        pinsBox.appendChild(b);
+      });
+      const li = el("li"); const lb = el("button", null, esc(loc.name));
+      lb.setAttribute("aria-pressed", "false"); lb.addEventListener("click", () => select(i));
+      li.appendChild(lb); list.appendChild(li);
+    });
+  }
 
   function select(i, { zoom = true } = {}) {
-    const n = D.locations.length; i = (i + n) % n; current = i;
-    const loc = D.locations[i];
-    $$(".pin", pinsBox).forEach((p, k) => p.classList.toggle("is-active", k === i));
+    const n = PLACES.length; i = (i + n) % n; current = i;
+    const loc = PLACES[i];
+    $$(".pin", pinsBox).forEach(p => p.classList.toggle("is-active", +p.dataset.i === i));
     $$("button", list).forEach((b, k) => b.setAttribute("aria-pressed", k === i));
+
+    const [first, ...rest] = loc.sections;
+    const lead = first && first.title.toLowerCase() === "opis" && !first.gm ? first : null;
+    const secs = lead ? rest : loc.sections;
+    const badge = STATUS[loc.status] ? `<span class="place__status">${esc(STATUS[loc.status])}</span>` : "";
 
     panel.innerHTML = "";
     const art = el("article", "place");
     art.innerHTML = `
-      <p class="place__kind${loc.pending ? " place__kind--pending" : ""}">${esc(loc.kind)}</p>
+      <p class="place__kind${loc.status !== "kanon" ? " place__kind--pending" : ""}">${esc(loc.kind)} ${badge}</p>
       <h3>${esc(loc.name)}</h3>
-      <p class="place__native"><code>${esc(loc.native)}</code> — ${esc(loc.nativeGloss)}</p>
-      ${loc.text.map(t => `<p>${esc(t)}</p>`).join("")}
+      <p class="place__native"><code>${esc(loc.native)}</code>${loc.nativeGloss ? " — " + esc(loc.nativeGloss) : ""}</p>
+      ${lead ? `<div class="place__lead">${lead.html}</div>` : ""}
+      ${secs.map(s => `<details class="place__sec${s.gm ? " place__sec--gm" : ""}"${s.gm && /na głos/i.test(s.title) ? " open" : ""}>
+          <summary>${esc(s.title)}${s.gm ? '<span class="gm-tag">MG</span>' : ""}</summary>
+          <div class="place__body">${s.html}</div></details>`).join("")}
       <ul class="place__tags">${loc.tags.map(t => `<li>${esc(t)}</li>`).join("")}</ul>
       <div class="place__nav"><button data-d="-1">← Poprzednie</button><button data-d="1">Następne →</button></div>`;
     $$(".place__nav button", art).forEach(b => b.addEventListener("click", () => select(current + +b.dataset.d)));
     panel.appendChild(art);
+    panel.scrollTop = 0;
 
-    if (zoom) {
-      const s = innerWidth < 600 ? 1.9 : 2.2;
-      const tx = Math.min(0, Math.max(-(s - 1) * 100, 50 - loc.x * s));
-      const ty = Math.min(0, Math.max(-(s - 1) * 100, 50 - loc.y * s));
+    if (zoom && loc.points.length) {
+      const xs = loc.points.map(p => p[0]), ys = loc.points.map(p => p[1]);
+      const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+      const span = Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys));
+      const s = Math.max(1.15, Math.min(innerWidth < 600 ? 1.9 : 2.2, 60 / Math.max(span, 1)));
+      const tx = Math.min(0, Math.max(-(s - 1) * 100, 50 - cx * s));
+      const ty = Math.min(0, Math.max(-(s - 1) * 100, 50 - cy * s));
       canvas.style.transform = `translate(${tx}%, ${ty}%) scale(${s})`;
       $$(".pin", pinsBox).forEach(p => p.style.transform = `scale(${1 / s})`);
       atlas.classList.add("is-zoomed"); reset.hidden = false;
@@ -306,22 +325,31 @@
 
   /* ---------- JĘZYK — słownik ---------- */
   const dSearch = $("#dictSearch"), dTable = $("#dictTable"), dCats = $("#dictCats"), dCount = $("#dictCount");
-  let dCat = "wszystko";
-  Object.entries(D.dictCats).forEach(([k, v]) => {
-    const b = el("button", null, esc(v)); b.setAttribute("aria-pressed", k === dCat);
-    b.addEventListener("click", () => { dCat = k; $$("button", dCats).forEach(x => x.setAttribute("aria-pressed", x === b)); renderDict(); });
-    dCats.appendChild(b);
-  });
+  let dCat = "wszystko", DICT = [];
   const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ł/g, "l");
+  function initDict(rows) {
+    DICT = rows;
+    const cats = ["wszystko", ...new Set(rows.map(r => r.cat).filter(Boolean))];
+    if (rows.some(r => r.status !== "kanon")) cats.push("propozycje");
+    cats.forEach(k => {
+      const b = el("button", k === "propozycje" ? "chip--prop" : null, esc(k[0].toUpperCase() + k.slice(1)));
+      b.setAttribute("aria-pressed", k === dCat);
+      b.addEventListener("click", () => { dCat = k; $$("button", dCats).forEach(x => x.setAttribute("aria-pressed", x === b)); renderDict(); });
+      dCats.appendChild(b);
+    });
+    dSearch.addEventListener("input", renderDict); renderDict();
+  }
   function renderDict() {
     const q = norm(dSearch.value.trim());
-    const rows = D.dict.filter(([w, m, c, e]) => (dCat === "wszystko" || c === dCat) && (!q || norm(w + " " + m + " " + e).includes(q)));
+    const rows = DICT.filter(r =>
+      (dCat === "wszystko" || r.cat === dCat || (dCat === "propozycje" && r.status !== "kanon")) &&
+      (!q || norm(`${r.word} ${r.meaning} ${r.ety}`).includes(q)));
     dTable.innerHTML = rows.length
-      ? rows.map(([w, m, , e]) => `<div class="word" role="listitem"><b>${esc(w)}</b><span>${esc(m)}</span>${e ? `<i>${esc(e)}</i>` : ""}</div>`).join("")
+      ? rows.map(r => `<div class="word${r.status !== "kanon" ? " word--prop" : ""}" role="listitem"><b>${esc(r.word)}</b><span>${esc(r.meaning)}</span>${r.ety ? `<i>${esc(r.ety)}</i>` : ""}${r.status !== "kanon" ? `<em class="word__status">${esc(r.status)}</em>` : ""}</div>`).join("")
       : `<p class="dict__empty">Brak takiego słowa — może jeszcze nie zostało wymówione.</p>`;
-    dCount.textContent = `${rows.length} z ${D.dict.length} słów · pełny słownik liczy ponad 300 rdzeni`;
+    const props = DICT.filter(r => r.status !== "kanon").length;
+    dCount.textContent = `${rows.length} z ${DICT.length} słów${props ? ` · ${props} propozycji` : ""} · pełny słownik liczy ponad 300 rdzeni`;
   }
-  dSearch.addEventListener("input", renderDict); renderDict();
 
   /* ---------- LEOTHERN ---------- */
   $("#ethos").innerHTML = D.ethos.map(e => `<li>${esc(e)}</li>`).join("");
@@ -347,4 +375,21 @@
   $$(".reveal, .reveal-stagger").forEach(n => io.observe(n));
 
   onScroll();
+
+  /* =========================================================
+     LORE Z PLIKÓW
+     ========================================================= */
+  WW.loadLore().then(({ mode, places, dict }) => {
+    document.body.dataset.mode = mode;
+    if (mode === "mg") {
+      const tag = el("a", "mode-badge", "Tryb MG");
+      tag.href = "?publiczny"; tag.title = "Notatki prowadzącego są widoczne. Kliknij, by zobaczyć wersję publiczną.";
+      $("#nav").insertBefore(tag, $(".nav__toggle"));
+    }
+    initAtlas(places); initDict(dict);
+  }).catch(err => {
+    console.error(err);
+    const msg = `<p class="lore-error">Nie udało się wczytać plików z <code>lore/</code>. Otwórz stronę przez serwer (np. <code>python3 -m http.server</code>), nie bezpośrednio z dysku.</p>`;
+    $("#atlasPanel").innerHTML = msg; $("#dictTable").innerHTML = msg;
+  });
 })();
