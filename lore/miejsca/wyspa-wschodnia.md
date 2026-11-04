@@ -3,15 +3,15 @@ id: wyspa-wschodnia
 nazwa: Wyspa Wschodnia
 birdfolk: —
 birdfolk_znaczenie: nazwa nieustalona
-typ: Do opisania
+typ: Główna część osady
 mapa: 66, 46
 status: do opisania
-tagi: do uzupełnienia
+tagi: zabudowa, mosty
 ---
 
 ## Opis
 
-Rozległa wyspa z zabudową gospodarczą, na skraju brzozowego lasu, mostem połączona z Rynkiem.
+Jedna z dwóch głównych części osady. Rozległa wyspa na skraju brzozowego lasu, mostem połączona z Rynkiem.
 
 ## Co tam jest
 
@@ -27,4 +27,4 @@ Rozległa wyspa z zabudową gospodarczą, na skraju brzozowego lasu, mostem poł
 
 ## Otwarte pytania · MG
 
-- Czym jest ta wyspa? Pomysły: dzielnica rzemieślników Mapach (kuźnie, warsztaty — hałaśliwi kowale z historii Jacka), przystań wodnego ptactwa, spichlerze.
+- Kto tu mieszka? Czym wschodnia różni się od zachodniej? Pomysł: bliżej lasu, więc może tu mieszkać więcej Cervanów i tych, którzy handlują z elfami; albo dzielnica rzemieślników Mapach (hałaśliwi kowale z historii Jacka).

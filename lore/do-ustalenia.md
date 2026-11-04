@@ -12,8 +12,20 @@ Otwarte pytania i sprzeczności. Gdy coś rozstrzygniesz, przenieś odpowiedź d
 
 ## Mapa
 
-- [ ] **Wyspa Religijna:** przyjęte, że to zachodnia wyspa przy delcie, a imperialne kapliczki rozchodzą się w górną i lewą część mapy. Do potwierdzenia.
-- [ ] **Wyspa Wschodnia:** czym jest?
+Ustalone: **Wyspa Zachodnia i Wyspa Wschodnia tworzą główne części osady.** Razem ze Stabilną Wyspą i Rynkiem to serce Whitewood. Dalsze wyspy są wolne.
+
+- [ ] **Wyspa Religijna:** która z dalszych wysp? Tymczasowo północno-zachodnia (punkt 29, 15).
+- [ ] **Zachodnia i Wschodnia:** kto mieszka gdzie, czym się różnią?
+
+### Wolne wyspy (orientacyjne punkty na mapie, x, y w %)
+
+| Gdzie | Punkt | Uwagi |
+|---|---|---|
+| północny zachód, między odnogami | 29, 15 | tymczasowo Wyspa Religijna |
+| północ, na prawo od środkowej odnogi | 56, 20 | most do Stabilnej Wyspy |
+| północny wschód | 77, 22 | most od strony Wyspy Wschodniej |
+| zachodni brzeg | 8, 44 | tymczasowo jedna z kapliczek |
+| północno-zachodni brzeg | 11, 18 | tymczasowo jedna z kapliczek |
 - [ ] **Porzucone kopalnie:** gdzie leżą? Wiadomo tylko, że bliżej Lasu, a część jest zalana.
 - [ ] **Miejsce ukojeń:** dokąd prowadzi się Szlamy Przemieńcowe? Czy jest stałe miejsce pochówku?
 - [ ] Nazwy wysp w Birdfolku.

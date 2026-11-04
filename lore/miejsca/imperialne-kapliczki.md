@@ -4,7 +4,7 @@ nazwa: Imperialne kapliczki
 birdfolk: —
 birdfolk_znaczenie: nazwa nieustalona
 typ: Rozrastające się sanktuaria
-mapa: 22, 11; 7, 36
+mapa: 11, 18; 8, 44
 status: kanon
 tagi: Imperium, bogowie, granica
 ---
