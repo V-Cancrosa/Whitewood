@@ -1,8 +1,8 @@
 ---
 id: wyspa-zachodnia
 nazwa: Wyspa Zachodnia
-birdfolk: —
-birdfolk_znaczenie: nazwa nieustalona
+birdfolk: durtanol
+birdfolk_znaczenie: miejsce rodów
 typ: Główna część osady
 mapa: 23, 51
 status: do opisania

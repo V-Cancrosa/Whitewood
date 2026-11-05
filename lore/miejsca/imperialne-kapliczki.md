@@ -1,8 +1,8 @@
 ---
 id: imperialne-kapliczki
 nazwa: Imperialne kapliczki
-birdfolk: —
-birdfolk_znaczenie: nazwa nieustalona
+birdfolk: körentankoir
+birdfolk_znaczenie: małe świątynie (lm)
 typ: Rozrastające się sanktuaria
 mapa: 11, 18; 8, 44
 status: kanon

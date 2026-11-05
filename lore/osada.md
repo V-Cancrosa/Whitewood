@@ -21,24 +21,24 @@ Powódź Tysiąclecia dorzuciła do tej baśni nutę melancholii. Whitewood nauc
 
 - **Świt** należy do Skrzydlatych. Pierwsze otwierają się gniazda w koronach domów-brzóz, a Gallusy budzą osadę, zanim słońce dotknie wody.
 - **Ranek** to mosty pełne ruchu: wodne ptactwo wnosi sieci na Rynek, a rzemieślnicy otwierają warsztaty na parterach.
-- **Południe** (`gallin`) jest porą wspólnego stołu. Kto ma czas, je na zewnątrz. Kto nie ma, i tak dostanie miskę od sąsiada.
+- **Południe** (`gallin`) jest porą wspólnego stołu (`kotar`, „brać razem”). Kto ma czas, je na zewnątrz. Kto nie ma, i tak dostanie miskę od sąsiada.
 - **Wieczór** to muzyka na mostach i opowieści Tabaxi. Starsi siedzą przy wodzie, młodsi wypatrują świetlików w koronach.
-- **Noc** pilnują Sowy. Strig obchodzą wyspy po cichu, a ich pohukiwania mają swój kod: inne znaczy „wszystko w porządku”, inne „ktoś obcy na moście”.
+- **Noc** pilnują Sowy. Strig obchodzą wyspy po cichu, a ich pohukiwania mają swój kod (`strigsal`, „nocna mowa”; w gwarze Sów *hulhaad*): inne znaczy „wszystko w porządku”, inne „ktoś obcy na moście”.
 
 ## Zmartwienia
 
 Dzikie zwierzęta i pomniejsze magiczne stworki. Raz na jakiś czas coś większego.
 
 - **Mgliki** (`silhenko`, „mała mgła”): drobne mgielne stworki, które w wilgotne poranki chowają rzeczy i odkładają je w dziwnych miejscach. Zostawia się im okruszki na parapecie, żeby oddawały szybciej.
-- **Korojady**: chrząszcze wielkości kciuka, które jedzą korę żywych brzóz. Prawdziwy szkodnik, bo tutaj brzoza to ściana domu. Gdy się rozmnożą, cała ulica wychodzi z pochodniami.
-- **Skoczyryby i wodne szczury**: pospolite od Powodzi. Skoczyryba potrafi wyrwać rybakowi połów z ręki, a szczury podgryzają liny przy mostach.
-- **Coś większego** przychodzi raz na kilka lat: z dawnych bagien albo z głębi lasu. Pamięta się je potem latami, a dzieci liczą lata od „tej zimy, gdy przyszedł…”.
+- **Korojady** (`silantarko`, „mały, co bierze brzozę”): chrząszcze wielkości kciuka, które jedzą korę żywych brzóz. Prawdziwy szkodnik, bo tutaj brzoza to ściana domu. Gdy się rozmnożą, cała ulica wychodzi z pochodniami.
+- **Skoczyryby** (`hensilko`, „ryba powietrza”) **i wodne szczury** (`siltarko`, „mały, co bierze z wody”): pospolite od Powodzi. Skoczyryba potrafi wyrwać rybakowi połów z ręki, a szczury podgryzają liny przy mostach.
+- **Coś większego** (`sikaga`, dosłownie „wielkie co?”) przychodzi raz na kilka lat: z dawnych bagien albo z głębi lasu. Pamięta się je potem latami, a dzieci liczą lata od „tej zimy, gdy przyszedł…”.
 
 ## Szlamy Przemieńcowe
 
 Szlamy Przemieńcowe nieco różnią się od zwykłych i kaustycznych. Wierzy się, że to dusze tych, którzy przed Powodzią poszli na bagna i nie wrócili, albo tych, których po Powodzi zebrała woda.
 
-Takiego Szlamu się nie zabija od razu. Najpierw trzeba go **odprawić**: pozwolić mu dojść tam, dokąd zmierza, żeby dusza zaznała ukojenia. Dopiero wtedy uznaje się go za potwora, którego trzeba zniszczyć.
+Takiego Szlamu się nie zabija od razu. Najpierw trzeba go **odprawić** (`donkir`, „dać dojść”): pozwolić mu dojść tam, dokąd zmierza, żeby dusza zaznała ukojenia. Dopiero wtedy uznaje się go za potwora, którego trzeba zniszczyć.
 
 Nic z tego nie jest pewne. To wierzenie, może półprawda. Ale Przemieńcowe zachowują się przewidywalnie: póki im nie przeszkadzasz, nie atakują. Atakują dopiero, gdy dojdą do miejsca, do którego zmierzały.
 
@@ -68,9 +68,9 @@ Przyniosło dużo możliwości, ale też dużo rzeczy, których społeczność n
 Na zmianę barter i prosta lokalna moneta. Do tego przyjmuje się monetę imperialną. Nawet ktoś, kto nie chce Imperium, weźmie imperialne monety, żeby wymienić się z kimś ze społeczności, kto Imperium woli.
 
 - Lokalną monetę nazywa się po prostu `karorko`, „mały metal”, czyli „moneta”. Imperialną nazywa się po imperialnemu, bo to obca rzecz.
-- Karorko to brązowy krążek z dziurką, noszony na sznurku. Bogactwo liczy się w sznurkach.
-- W barterze miarą jest **dzień pracy**: „to warte dwa dni pracy przy sieciach”.
-- Kurs imperialnej monety do karorko ustala się codziennie na Rynku, a kłótnie o kurs to ulubiony sport Mapach.
+- Karorko to brązowy krążek z dziurką, noszony na sznurku. Bogactwo liczy się w sznurkach (`karorkor`, „krąg monet”).
+- W barterze miarą jest **dzień pracy** (`galkat`): „to warte dwa dni pracy przy sieciach”.
+- Kurs imperialnej monety do karorko ustala się codziennie na Rynku, a kłótnie o kurs to ulubiony sport Mapach. W ich gwarze to *koersgeshrey*.
 
 ## Święta
 

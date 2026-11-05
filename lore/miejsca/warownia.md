@@ -26,7 +26,7 @@ To ród Tortle, nazywany w osadzie **Galnami**, od `galna`: w gwarze Tortle to s
 ## Historia
 
 - **Dlaczego wszyscy to tolerują:** Galnowie to jedyni, którzy naprawdę znają się na kamieniu. Każda kuźnia, piwnica, podmurówka i nadbrzeże w Whitewood to ich robota. Osada nie chce kamiennych domów, ale potrzebuje kamieniarzy.
-- **Spór o warownię:** gdy zaczęli budować, Rada przypomniała im zasadę „kamień tylko tam, gdzie musi”. Galnowie odpowiedzieli z kamienną twarzą, że to wszystko podmurówka, tylko wysoka. Spór trwa do dziś i stał się w osadzie powiedzonkiem: „to tylko wysoka podmurówka”, czyli przesada udająca konieczność.
+- **Spór o warownię:** gdy zaczęli budować, Rada przypomniała im zasadę „kamień tylko tam, gdzie musi”. Galnowie odpowiedzieli z kamienną twarzą, że to wszystko podmurówka, tylko wysoka. Spór trwa do dziś i stał się w osadzie powiedzonkiem: „to tylko wysoka podmurówka” (`dolkaron`; Galnowie mówią w swojej gwarze *dolkarnath*), czyli przesada udająca konieczność.
 - Warownia stoi na fundamentach starszych niż Powódź, chyba po budynku przy dawnych kopalniach. Galnowie twierdzą, że wybrali to miejsce, bo „kamień już tu był”.
 
 ## Na głos · MG

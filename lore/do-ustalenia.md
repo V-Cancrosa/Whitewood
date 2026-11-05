@@ -71,24 +71,7 @@ Ustalone: każda z ras ma swoje mniejsze i większe święta. Treść do wymyśl
 
 ## Słownik: brakujące słowa
 
-Słowa potrzebne przy opisywaniu miejsca, których nie ma w Birdfolk v2:
-
-- [ ] most
-- [ ] wyspa
-- [ ] delta
-- [ ] powódź
-- [ ] nora
-- [ ] kopalnia, szyb
-- [ ] szlam
-- [ ] magia
-- [ ] muzyka, kalimba, skrzypce
-- [ ] elf
-- [ ] zając
-- [ ] jednorożec
-- [ ] lekarstwo
-- [ ] bóg / bogini
-- [ ] zakon
-- [ ] kapliczka
+Wszystkie słowa z dawnej listy mają propozycje w `lore/slownik.tsv` (status `propozycja`): most `kirasil`, wyspa `kordol`, delta `silkirir`, powódź `silgakir`, nora `doltan`, kopalnia `doltarol`, szyb `dolkira`, szlam `dolsildur`, magia `trinras`, muzyka `salsun`, kalimba `salsunurko`, skrzypce `linsalur`, elf `kakrenat`, zając `drug-harengon`, jednorożec `unlanoldren`, lekarstwo `landrenka`, bóstwo `trinor`, zakon `trinorkor`, kapliczka `körentanko`.
 
 ## Do przeniesienia z notatek (tylko fakty o miejscu)
 

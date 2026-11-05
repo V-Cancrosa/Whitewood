@@ -1,8 +1,8 @@
 ---
 id: wyspa-wschodnia
 nazwa: Wyspa Wschodnia
-birdfolk: —
-birdfolk_znaczenie: nazwa nieustalona
+birdfolk: kosenol
+birdfolk_znaczenie: miejsce powitania
 typ: Główna część osady
 mapa: 66, 46
 status: do opisania

@@ -106,7 +106,7 @@ Oprócz świąt wspólnych dla całego Whitewood każda z ras ma swoje mniejsze 
 
 ## Tortle
 
-[?] **Znak Durinu** · `durinkarlin` · w gwarze: *galnathur*. Tortle mierzą czas pokoleniami (`durin`). Raz na pokolenie ród dopisuje jeden znak na kamieniu rodowym: wydarzenie, które uznał za najważniejsze. U Galnów ten kamień jest wmurowany w Warownię, a Galnowie twierdzą, że to dlatego musiała być z kamienia. W dniu znaku Tortle malują na skorupach rodowy wzór, bo skorupa (`galna`) to dla nich symbol rodu.
+[?] **Znak Durinu** · `durinkarlin` · w gwarze: *galnathur*. Tortle mierzą czas pokoleniami (`durin`). Raz na pokolenie ród dopisuje jeden znak na kamieniu rodowym (`durtankar`; w gwarze *galnaskar*): wydarzenie, które uznał za najważniejsze. U Galnów ten kamień jest wmurowany w Warownię, a Galnowie twierdzą, że to dlatego musiała być z kamienia. W dniu znaku Tortle malują na skorupach rodowy wzór, bo skorupa (`galna`) to dla nich symbol rodu.
 
 ## Otwarte pytania · MG
 

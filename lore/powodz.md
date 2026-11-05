@@ -55,9 +55,9 @@ Gdy wody opadły, krajobraz był nie do poznania. Dawna dolina stała się delt�
 
 ## Szlamy Przemieńcowe
 
-Nieco inne niż zwykłe i kaustyczne. Wierzy się, że to dusze tych, którzy przed Powodzią poszli na bagna i nie wrócili, albo tych, których po Powodzi zebrała woda.
+W Birdfolku `kanatsil`, „przodek w wodzie”. Nieco inne niż zwykłe Szlamy (`dolsildur`, „żywe mokradło”) i kaustyczne. Wierzy się, że to dusze tych, którzy przed Powodzią poszli na bagna i nie wrócili, albo tych, których po Powodzi zebrała woda.
 
-Takiego Szlamu się nie zabija od razu. Najpierw trzeba go **odprawić**: pozwolić mu dojść tam, dokąd zmierza, żeby dusza zaznała ukojenia. Dopiero wtedy uznaje się go za potwora, którego trzeba zniszczyć.
+Takiego Szlamu się nie zabija od razu. Najpierw trzeba go **odprawić** (`donkir`, „dać dojść”): pozwolić mu dojść tam, dokąd zmierza, żeby dusza zaznała ukojenia. Dopiero wtedy uznaje się go za potwora, którego trzeba zniszczyć.
 
 Nic z tego nie jest pewne. To wierzenie, może półprawda. Ale Przemieńcowe zachowują się przewidywalnie: póki im nie przeszkadzasz, nie atakują. Atakują dopiero, gdy dojdą do miejsca, do którego zmierzały.
 
