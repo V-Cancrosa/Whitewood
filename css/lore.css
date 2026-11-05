@@ -39,3 +39,19 @@
 .word__status { position: absolute; top: 12px; right: 12px; font-style: normal; font-size: 10px; font-family: var(--f-display); letter-spacing: .15em; text-transform: uppercase; color: var(--muted); border: 1px dashed var(--faint); padding: 1px 6px; border-radius: 99px; }
 .chips .chip--prop { border-style: dashed; }
 .lore-error { padding: 24px; color: #e1a07a; font-style: italic; grid-column: 1 / -1; }
+
+/* ---------- OSADA ---------- */
+.settle { background: var(--ink-2); padding-top: clamp(70px, 9vw, 120px); }
+.settle__lead p { margin: 0 0 .8em; }
+.settle__lead code.native, .settle__body code.native { font-family: var(--f-body); font-weight: 600; font-style: italic; color: var(--gold-2); }
+.settle__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+.settle__card { padding: 30px 28px; border: 1px solid var(--line-2); border-top: 2px solid var(--moss-2); background: var(--ink); }
+.settle__card h3 { font-size: 20px; margin-bottom: 14px; color: var(--gold-2); display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.settle__body { font-size: .95em; }
+.settle__body p { color: var(--parch); margin: 0 0 .8em; }
+.settle__body ul { margin: 0 0 .8em; padding-left: 1.1em; color: var(--parch); }
+.settle__body li { margin-bottom: .3em; }
+.settle__body li::marker { color: var(--gold); }
+.settle__body strong { color: var(--birch); font-weight: 600; }
+.settle__card--gm { border-top-color: var(--rust); background: linear-gradient(160deg, rgba(179,84,42,.08), transparent 60%), var(--ink); }
+.settle__card--gm h3 { color: #e8c3ab; }

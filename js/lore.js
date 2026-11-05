@@ -79,12 +79,13 @@
     const qs = new URLSearchParams(location.search);
     let mode = cfg.tryb === "mg" ? "mg" : "publiczny";
     if (qs.has("publiczny")) mode = "publiczny";
-    const [places, dict] = await Promise.all([
+    const [places, dict, settlement] = await Promise.all([
       Promise.all(cfg.miejsca.map(id => get(`lore/miejsca/${id}.md`, "text").then(t => parsePlace(t, id)))),
-      get("lore/slownik.tsv", "text").then(parseTSV)
+      get("lore/slownik.tsv", "text").then(parseTSV),
+      get("lore/osada.md", "text").then(t => parsePlace(t, "osada"))
     ]);
-    if (mode !== "mg") places.forEach(p => p.sections = p.sections.filter(s => !s.gm));
-    return { mode, places, dict };
+    if (mode !== "mg") [...places, settlement].forEach(p => p.sections = p.sections.filter(s => !s.gm));
+    return { mode, places, dict, settlement };
   };
   WW.md = md;
 })();

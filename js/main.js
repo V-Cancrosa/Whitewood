@@ -379,7 +379,21 @@
   /* =========================================================
      LORE Z PLIKÓW
      ========================================================= */
-  WW.loadLore().then(({ mode, places, dict }) => {
+  function initSettlement(doc) {
+    const [lead, ...cards] = doc.sections;
+    $("#osadaTitle").textContent = doc.name;
+    if (lead) $("#osadaLead").innerHTML = lead.html;
+    const grid = $("#osadaGrid");
+    grid.innerHTML = cards.map(s => `
+      <article class="settle__card${s.gm ? " settle__card--gm" : ""}">
+        <h3>${esc(s.title)}${s.gm ? ' <span class="gm-tag">MG</span>' : ""}</h3>
+        <div class="settle__body">${s.html}</div>
+      </article>`).join("");
+    grid.classList.add("reveal-stagger"); io.observe(grid);
+  }
+
+  WW.loadLore().then(({ mode, places, dict, settlement }) => {
+    initSettlement(settlement);
     document.body.dataset.mode = mode;
     if (mode === "mg") {
       const tag = el("a", "mode-badge", "Tryb MG");

@@ -22,6 +22,7 @@ Lore jest w katalogu **`lore/`**. To tymi plikami wymieniasz się między czatam
 | Plik | Co zawiera |
 |---|---|
 | `lore/ustawienia.json` | tryb (`"mg"` albo `"publiczny"`) i kolejność miejsc na mapie |
+| `lore/osada.md` | zasady całej osady: charakter, architektura, klimat, co przyszło z Imperium |
 | `lore/miejsca/*.md` | jedno miejsce = jeden plik; wzór w `_SZABLON.md` |
 | `lore/slownik.tsv` | słownik Birdfolk (kolumny rozdzielone tabulatorem, można wkleić do Arkuszy Google) |
 | `lore/do-ustalenia.md` | otwarte pytania, sprzeczności, brakujące słowa |

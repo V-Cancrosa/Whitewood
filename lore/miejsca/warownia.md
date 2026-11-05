@@ -11,7 +11,7 @@ tagi: Imperium, Tabaxi, przed Powodzią
 
 ## Opis
 
-Jedyny kamienny budynek z czerwonym dachem w drewnianej osadzie — z definicji obcy. Imperium postawiło tu swoją placówkę po wcieleniu Whitewood. Mieszkańcy z przekąsem nazywają ją `kakortan`, „domem poza kręgiem”.
+Jedyny budynek w całości z kamienia, z czerwonym dachem, w osadzie, która kamienia używa tylko na kuźnie, piwnice, podmurówki i nadbrzeża — z definicji obcy. Imperium postawiło tu swoją placówkę po wcieleniu Whitewood. Mieszkańcy z przekąsem nazywają ją `kakortan`, „domem poza kręgiem”.
 
 Nie wszystko w niej jest jednak imperialne. Fundamenty są starsze niż Powódź.
 
