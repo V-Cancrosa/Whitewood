@@ -191,3 +191,7 @@ html[data-mode="tworca"] .nav__key { color: #e1a07a; border-color: rgba(179,84,4
 .vulpin-doc .doc__sec { padding-top: 34px; }
 .vulpin-doc .doc__sec h2 { font-size: clamp(20px, 2vw, 26px); }
 .names { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+
+/* ---------- słowa z gwar ---------- */
+.word b.gw, .ws__words b.gw { font-family: var(--f-body); font-style: italic; font-weight: 600; color: #a9d0d6; letter-spacing: .02em; }
+.dict__table--gw { max-height: none; }

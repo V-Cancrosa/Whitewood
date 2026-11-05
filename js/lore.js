@@ -126,6 +126,12 @@
       return Promise.all(cfg.miejsca.map(id => get(`lore/miejsca/${id}.md`, "text").then(t => parseDoc(t, id))));
     },
     dict: () => get("lore/slownik.tsv", "text").then(parseTSV),
+    gwary: () => get("lore/gwary.tsv", "text").then(src => {
+      const pub = WW.mode !== "tworca";
+      const rows = src.replace(/\r/g, "").split("\n").filter(l => l.trim() && !l.startsWith("#")); rows.shift();
+      return rows.map(l => { const [word, dialect, meaning, insp, status] = l.split("\t").map(s => (s || "").trim()); return { word, dialect, meaning, insp, status: status || "kanon" }; })
+        .filter(r => r.word && !(pub && r.status !== "kanon"));
+    }),
     doc: name => get(`lore/${name}.md`, "text").then(t => parseDoc(t, name))
   };
 

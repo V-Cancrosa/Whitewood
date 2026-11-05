@@ -43,7 +43,7 @@ Ród ma też imię prawdziwe: to prawdziwe imię jego protoplasty. Na zewnątrz 
 
 Tam, w głębi, lisię jest wystawiane na spór: kwestionuje się je, aż obroni się jakimś słowem albo przed jakimś słowem nie zdoła się obronić. To słowo staje się jego prawdziwym imieniem.
 
-- [?] **Nazwa.** Vulpini mówią na nie `lanel`: „wiedza czuła”, od `lan` (wiedzieć) i dworskiego sufiksu Vulpinów `-el`. Postronni mówią po prostu, że „lisy zeszły pod ziemię”.
+- [?] **Nazwa.** W Birdfolku `dolkir`, „iść w ziemię”. W gwarze Vulpinów *nomikagé*, „imię w cieniu”. Postronni mówią po prostu, że „lisy zeszły pod ziemię”.
 - [?] **Kiedy.** Nikt nie zapowiada dnia. Lisię dowiaduje się wieczorem, gdy dorośli gaszą światła w górnych korytarzach. Mówi się: *kto pyta, kiedy zejdzie, ten jeszcze nie zejdzie.*
 - [?] **Zejście.** Schodzi się po ciemku, a na dole pali się jedno światło. Na górze nie zostaje nikt, nawet przyjaciele rodziny. To jedyna noc w roku, kiedy drzwi nory, zwykle otwarte dla każdego, są zamknięte.
 - [?] **Spór.** Starsi rodu po kolei rzucają lisięciu słowa, wszystkie na literę rodu, i każde słowo to zarzut albo obietnica: *jesteś taki, nie jesteś taki, będziesz taki.* Lisię musi odpowiedzieć: odeprzeć, przekręcić, obrócić w żart, przyjąć i obronić. Wolno mu używać całej vulpińskiej sztuki dwuznaczności. Wolno mu też podsunąć własne słowo.

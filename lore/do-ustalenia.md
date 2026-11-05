@@ -8,6 +8,8 @@ Otwarte pytania i sprzeczności. Gdy coś rozstrzygniesz, przenieś odpowiedź d
 - **Oga Kornik należy do MG.** Na stronie tylko to, co już wiadomo: Loxodon, „Kornik” to przydomek, pełni rolę Ogi, leczył Silkir-Dolem. Bez dopisywania historii ani motywacji.
 - **Ton:** baśniowy, ale nie idylla. Spokojna wieś, w której największym zmartwieniem są dzikie zwierzęta i pomniejsze stworki, a raz na długi czas większy potwór. Powódź dorzuca melancholii, ale to społeczność oparta na radości.
 - **Propozycje:** „[?]” na początku akapitu lub punktu. Zatwierdzone: usunąć znacznik.
+- **Każda nowa rzecz dostaje słowa.** Wszystko, co powstaje, od razu dostaje nazwę w Birdfolku (do `lore/slownik.tsv`). Rzecz konkretnej rasy dostaje też słowo w gwarze tej rasy (do `lore/gwary.tsv`). Gwary to osobne języki, ale kilka ich słów zna każdy, tak jak „Ramadan” zna się bez arabskiego.
+- **Brzmienie gwar** opiera się na mieszance inspiracji z dokumentu Birdfolk v2. Gwary ptasie nie mają głosek wargowych (m, p, b, f, w).
 - **Strona opisuje tylko miejsce.** Bez przebiegu sesji i spoilerów drużyny.
 - **Dwa tryby:** teraz ściąga prowadzącego (sekcje „· MG”), po opuszczeniu Whitewood wersja publiczna. Przełącznik jest w `lore/ustawienia.json` → `"tryb"`.
 - **Nie włączać GitHub Pages**, dopóki trwa wątek w Whitewood.

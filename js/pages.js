@@ -319,6 +319,15 @@
     search.addEventListener("input", render); render();
   }
 
+  /* ---------- JĘZYK — słowa z gwar ---------- */
+  const gwBox = $("#gwaryTable");
+  if (gwBox) L.gwary().then(rows => {
+    gwBox.innerHTML = rows.length ? rows.map(r => `<div class="word word--gw${r.status !== "kanon" ? " word--prop" : ""}" role="listitem">
+        <b class="gw">${esc(r.word)}</b><span>${esc(r.meaning)}</span><i>gwara: ${esc(r.dialect)}${creator && r.insp ? ` · ${esc(r.insp)}` : ""}</i>
+        ${r.status !== "kanon" ? `<em class="word__status">${esc(r.status)}</em>` : ""}</div>`).join("")
+      : `<p class="dict__empty">Na razie żadnych.</p>`;
+  }).catch(e => WW.loreError(gwBox, e));
+
   /* =========================================================
      TŁUMACZ BIRDFOLK ⇄ POLSKI
      Słowo po słowie: rozbiór morfemów (birdfolk → polski)
@@ -535,16 +544,17 @@
       shop.innerHTML = `<div class="ws__locked"><p>Masz włączony widok gracza.</p><button class="btn btn--gold" type="button">Wróć do widoku twórcy</button></div>`;
       $("button", shop).addEventListener("click", WW.togglePlayerView);
     } else {
-      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.places(), L.dict()]).then(([todo, osada, powodz, vulpini, swieta, places, dict]) => {
+      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.places(), L.dict(), L.gwary()]).then(([todo, osada, powodz, vulpini, swieta, places, dict, gwary]) => {
         const docs = [osada, powodz, vulpini, swieta, ...places];
         const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : d.file === "swieta" ? "ludy.html#swieta" : `miejsce.html?id=${d.id}` })));
         const words = dict.filter(r => r.status !== "kanon");
+        const gwWords = gwary.filter(r => r.status !== "kanon");
         const gmCount = places.map(p => ({ p, n: p.sections.filter(s => s.gm).length }));
         const empty = places.filter(p => p.status === "do opisania");
         shop.innerHTML = `
           <div class="ws__stats">
             <div><b>${props.length}</b><span>propozycji czeka</span></div>
-            <div><b>${words.length}</b><span>słów-propozycji</span></div>
+            <div><b>${words.length + gwWords.length}</b><span>słów-propozycji</span></div>
             <div><b>${empty.length}</b><span>miejsc do opisania</span></div>
             <div><b>${places.length}</b><span>miejsc na mapie</span></div>
           </div>
@@ -555,7 +565,10 @@
                 <ol>${ps.map(p => `<li><a href="${p.href}">${esc(p.where.split(" → ")[1] || "")}</a> ${esc(p.text)}</li>`).join("")}</ol></details>`).join("") || "<p>Nic nie czeka.</p>"}
           </section>
           <section class="ws__block"><h2>Słowa-propozycje</h2>
+            <h3>Birdfolk</h3>
             <div class="ws__words">${words.map(r => `<div class="word word--prop"><b>${esc(r.word)}</b><span>${esc(r.meaning)}</span>${r.ety ? `<i>${esc(r.ety)}</i>` : ""}</div>`).join("") || "<p>Brak.</p>"}</div>
+            <h3>Gwary</h3>
+            <div class="ws__words">${gwWords.map(r => `<div class="word word--prop"><b class="gw">${esc(r.word)}</b><span>${esc(r.meaning)}</span><i>gwara: ${esc(r.dialect)} · ${esc(r.insp)}</i></div>`).join("") || "<p>Brak.</p>"}</div>
           </section>
           <section class="ws__block"><h2>Miejsca</h2>
             <ul class="ws__places">${gmCount.map(({ p, n }) => `<li><a href="miejsce.html?id=${p.id}">${esc(p.name)}</a><span class="ws__st ws__st--${WW.slug(p.status)}">${esc(p.status)}</span><span>${n} notatek MG</span></li>`).join("")}</ul>
