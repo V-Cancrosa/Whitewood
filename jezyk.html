@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birdfolk — Whitewood</title>
+<meta name="description" content="Birdfolk, wspólny język zwierzoludzi Whitewood: zasady, pismo Kuropatwa, słownik i szybki tłumacz.">
+<meta property="og:title" content="Whitewood — Sekoraz">
+<meta property="og:description" content="Osada, która nauczyła się żyć z tym, co zostało. Vetora — Krong.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d100c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%230d100c' stroke='%23c9a45c' stroke-width='3'/%3E%3Cpath d='M32 12v40M32 24l-9-7M32 30l10-8M32 38l-11-6M32 44l9-5' stroke='%23efe9dc' stroke-width='3' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/lore.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="subpage">
+
+<a class="skip" href="#tresc">Przejdź do treści</a>
+
+<main id="tresc">
+<section class="section lang" id="jezyk">
+  <div class="wrap">
+    <header class="section__head">
+      <p class="eyebrow reveal">Birdfolk</p>
+      <h2 class="reveal">Język wspólnoty równych</h2>
+      <p class="section__sub reveal">Wspólny Zwierzoludzki. Bez wielkich liter, bez rodzaju gramatycznego, bez przypadków. Zaprojektowany tak, by dało się go wymówić dziobem, pyskiem i trąbą.</p>
+    </header>
+
+    <div class="lang__pillars reveal-stagger">
+      <article><h3>brak wielkich liter</h3><p>Nikt nie jest gramatycznie „ważniejszy”. Imperialny dokument pisany WIELKIMI LITERAMI odbierany jest w Whitewood jako pyszałkowaty i agresywny.</p></article>
+      <article><h3>!istotność!</h3><p>Wykrzyknik nie oznacza krzyku, lecz istotność. Ruchomy, stawiany przed słowem, które w zdaniu jest najważniejsze. Imię bez znacznika jest niewidzialne.</p></article>
+      <article><h3>s · t · k</h3><p>Dystans mierzy się względem kręgu, nie siebie: <em>sen</em> — bliski mnie, <em>ten</em> — wspólny, <em>kan</em> — poza naszym kręgiem.</p></article>
+    </div>
+
+    
+    <div class="tool translator reveal" id="translator">
+      <div class="tr__head">
+        <h3 class="tool__title">Szybki tłumacz</h3>
+        <div class="tr__dir" id="trDir" role="group" aria-label="Kierunek">
+          <button type="button" data-dir="bf" aria-pressed="true">birdfolk → polski</button>
+          <button type="button" data-dir="pl" aria-pressed="false">polski → birdfolk</button>
+        </div>
+      </div>
+      <p class="tool__desc">Słowo po słowie, z rozbiorem na rdzeń i końcówki. Szyk i odmianę trzeba jeszcze złożyć samemu.</p>
+      <label class="field"><span class="visually-hidden">Tekst do tłumaczenia</span><textarea id="trInput" rows="2" placeholder="np. na ne-kir-ło" spellcheck="false"></textarea></label>
+      <div class="tr__examples" id="trExamples">
+        <button type="button" data-dir="bf">na ne-kir-ka-ło</button>
+        <button type="button" data-dir="bf">!aeliana! sal-ło: gali galsen.</button>
+        <button type="button" data-dir="bf">kosen kor-su, !jack!</button>
+        <button type="button" data-dir="bf">donor-ko-or-in</button>
+        <button type="button" data-dir="pl" hidden>dzień dobry, przyjacielu</button>
+        <button type="button" data-dir="pl" hidden>nasz dom przy rzece</button>
+        <button type="button" data-dir="pl" hidden>dziękuję za handel</button>
+      </div>
+      <div class="tr__out" id="trOut" aria-live="polite"></div>
+    </div>
+
+    <div class="lang__tools">
+      <!-- Emfaza -->
+      <div class="tool reveal">
+        <h3 class="tool__title">Ruchomy wykrzyknik</h3>
+        <p class="tool__desc">To samo zdanie, inna istotność.</p>
+        <div class="emph" id="emph">
+          <p class="emph__line" id="emphLine"></p>
+          <p class="emph__gloss" id="emphGloss"></p>
+          <div class="emph__dots" id="emphDots" role="tablist" aria-label="Warianty"></div>
+        </div>
+      </div>
+
+      <!-- Konwerter imion -->
+      <div class="tool reveal">
+        <h3 class="tool__title">Zapis imienia</h3>
+        <p class="tool__desc">Wpisz imię — zobacz je w Kuropatwie i w ptasiej wymowie (bez głosek wargowych).</p>
+        <label class="field">
+          <span class="visually-hidden">Imię</span>
+          <input id="nameInput" type="text" value="Imperator Wiktor" maxlength="40" autocomplete="off" spellcheck="false">
+        </label>
+        <dl class="name-out" id="nameOut"></dl>
+      </div>
+    </div>
+
+    <!-- Słownik -->
+    <div class="dict reveal">
+      <div class="dict__head">
+        <h3>Słownik</h3>
+        <label class="field field--search">
+          <span class="visually-hidden">Szukaj w słowniku</span>
+          <input id="dictSearch" type="search" placeholder="Szukaj: woda, sil, przyjaciel…" autocomplete="off">
+        </label>
+      </div>
+      <div class="chips" id="dictCats"></div>
+      <div class="dict__table" id="dictTable" role="list"></div>
+      <p class="dict__count" id="dictCount"></p>
+    </div>
+
+    <!-- Rok -->
+    <div class="year reveal">
+      <h3>karkor — rok cykliczny</h3>
+      <div class="year__wheel">
+        <div class="season s1"><b>drenha</b><span>wiosna</span><i>drzewa nadchodzą</i></div>
+        <div class="season s2"><b>rasgal</b><span>lato</span><i>ognisty dzień</i></div>
+        <div class="season s3"><b>drenło</b><span>jesień</span><i>drzewa, które były</i></div>
+        <div class="season s4"><b>silstrig</b><span>zima</span><i>wodna noc</i></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+<script src="js/lore.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

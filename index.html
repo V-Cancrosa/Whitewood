@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Whitewood — Sekoraz, miejsce pierwszego kręgu</title>
-<meta name="description" content="Whitewood: osada zwierzoludzi w delcie na granicy Wielkich Elfickich Lasów. Region Vetora, prowincja Krong. Świat kampanii D&D Krąg Cieni.">
+<meta name="description" content="Whitewood: osada zwierzoludzi w delcie na granicy Wielkich Elfickich Lasów. Region Vetora, prowincja Krong. Świat kampanii D&amp;D Krąg Cieni.">
 <meta property="og:title" content="Whitewood — Sekoraz">
 <meta property="og:description" content="Osada, która nauczyła się żyć z tym, co zostało. Vetora — Krong.">
 <meta property="og:image" content="assets/og-image.jpg">
@@ -17,33 +17,11 @@
 <link rel="preload" as="image" href="assets/whitewood-map.webp">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/lore.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
-<body>
+<body class="has-hero">
 
-<a class="skip" href="#prolog">Przejdź do treści</a>
-
-<!-- ============ NAV ============ -->
-<header class="nav" id="nav">
-  <a class="nav__brand" href="#top" aria-label="Whitewood — na górę">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29"/><path d="M32 12v40M32 24l-9-7M32 30l10-8M32 38l-11-6M32 44l9-5"/></svg>
-    <span>Whitewood</span>
-  </a>
-  <button class="nav__toggle" aria-expanded="false" aria-controls="navlinks" aria-label="Menu">
-    <span></span><span></span>
-  </button>
-  <nav id="navlinks" class="nav__links">
-    <a href="#osada">Osada</a>
-    <a href="#atlas">Atlas</a>
-    <a href="#kronika">Kronika</a>
-    <a href="#krag">Krąg</a>
-    <a href="#ludy">Ludy</a>
-    <a href="#bestiariusz">Bestiariusz</a>
-    <a href="#jezyk">Birdfolk</a>
-    <a href="#leothern">Leothernowie</a>
-    <a href="#postacie">Postacie</a>
-  </nav>
-  <div class="nav__progress" aria-hidden="true"><i></i></div>
-</header>
+<a class="skip" href="#tresc">Przejdź do treści</a>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
@@ -64,7 +42,7 @@
     <p class="hero__lede reveal-up" style="--d:1.7s">Osada zwierzoludzi w delcie rzeki, na granicy Wielkich Elfickich Lasów. Zbudowana wokół jednego drzewa, które przetrwało Powódź Tysiąclecia.</p>
     <div class="hero__cta reveal-up" style="--d:2s">
       <a class="btn btn--gold" href="#atlas">Otwórz atlas</a>
-      <a class="btn btn--ghost" href="#kronika">Czytaj kronikę</a>
+      <a class="btn btn--ghost" href="kronika.html">Czytaj kronikę</a>
     </div>
   </div>
 
@@ -74,6 +52,8 @@
 </section>
 
 <main>
+
+<main id="tresc">
 
 <!-- ============ PROLOG ============ -->
 <section class="section prolog" id="prolog">
@@ -99,23 +79,11 @@
   </div>
 </section>
 
-<!-- ============ OSADA ============ -->
-<section class="section settle" id="osada">
-  <div class="wrap">
-    <header class="section__head">
-      <p class="eyebrow reveal">Osada</p>
-      <h2 class="reveal" id="osadaTitle">Jak żyje Whitewood</h2>
-      <div class="section__sub settle__lead reveal" id="osadaLead"></div>
-    </header>
-    <div class="settle__grid" id="osadaGrid"></div>
-  </div>
-</section>
-
 <!-- ============ ATLAS ============ -->
 <section class="section atlas" id="atlas">
   <div class="wrap">
     <header class="section__head">
-      <p class="eyebrow reveal">I · Atlas</p>
+      <p class="eyebrow reveal">Atlas</p>
       <h2 class="reveal">Delta po Powodzi</h2>
       <p class="section__sub reveal">Wybierz miejsce na mapie. Rzeka rozdzieliła się na odnogi, a między nimi powstały wyspy — każda spięta mostem z Rynkiem.</p>
     </header>
@@ -144,232 +112,31 @@
   </div>
 </section>
 
-<!-- ============ KRONIKA ============ -->
-<section class="section chronicle" id="kronika">
+<!-- ============ DALEJ ============ -->
+<section class="section tiles" id="dalej">
   <div class="wrap">
     <header class="section__head">
-      <p class="eyebrow reveal">II · Kronika</p>
-      <h2 class="reveal">Od czuwania do Imperium</h2>
-      <p class="section__sub reveal">Historia Whitewood spisana według Mieszka — od pierwszych gniazd na palach po dzień, w którym przez most przeszedł Zwiastun.</p>
+      <p class="eyebrow reveal">Dalej</p>
+      <h2 class="reveal">Wejdź głębiej</h2>
     </header>
-    <ol class="timeline" id="timeline"></ol>
-  </div>
-</section>
-
-<!-- ============ POWÓDŹ ============ -->
-<section class="flood" id="powodz" aria-label="Powódź Tysiąclecia">
-  <canvas class="flood__water" aria-hidden="true"></canvas>
-  <div class="wrap narrow flood__inner">
-    <p class="eyebrow eyebrow--light reveal">Rok zero</p>
-    <h2 class="flood__title reveal">Powódź<br>Tysiąclecia</h2>
-    <p class="flood__lede reveal">Nie była to zwykła powódź sezonowa. Rzeka wystąpiła z&nbsp;brzegów gwałtownie, jakby zerwał się jej rytm.</p>
-    <ul class="flood__list reveal-stagger">
-      <li><span>I</span>Bestie i mieszkańcy uciekali w te same miejsca.</li>
-      <li><span>II</span>Dawne granice przestały istnieć.</li>
-      <li><span>III</span>Część kopalń zalało natychmiast. Inne powoli stawały się pułapkami.</li>
-    </ul>
-    <p class="flood__coda reveal">Jedna nora została ominięta przez wodę.<br><em>Ta, w której mieszkali Leothernowie.</em></p>
-  </div>
-</section>
-
-<!-- ============ KRĄG / WŁADZA ============ -->
-<section class="section circle" id="krag">
-  <div class="wrap">
-    <header class="section__head">
-      <p class="eyebrow reveal">III · Krąg</p>
-      <h2 class="reveal">Władza rozproszona w drzewie</h2>
-      <p class="section__sub reveal">Wódz nie jest władcą, lecz tym, który wiedzie i zakorzenia. Whitewood nie jest naiwne. Nie jest też ksenofobiczne. Jest ostrożne i strukturalne.</p>
-    </header>
-
-    <div class="circles">
-      <div class="circles__diagram reveal" id="circlesDiagram">
-        <svg viewBox="0 0 400 400" role="img" aria-label="Trzy kręgi wspólnoty Whitewood">
-          <defs>
-            <radialGradient id="cg" cx="50%" cy="50%" r="50%">
-              <stop offset="0" stop-color="#c9a45c" stop-opacity=".35"/>
-              <stop offset="1" stop-color="#c9a45c" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <circle class="ring ring--kakor" data-ring="kakor" cx="200" cy="200" r="186"/>
-          <circle class="ring ring--tekor" data-ring="tekor" cx="200" cy="200" r="128"/>
-          <circle class="ring ring--sekor" data-ring="sekor" cx="200" cy="200" r="70"/>
-          <circle cx="200" cy="200" r="70" fill="url(#cg)" pointer-events="none"/>
-          <g class="tree" pointer-events="none">
-            <path d="M200 238v-70M200 188l-16-14M200 200l18-15M200 214l-20-10M200 226l15-8"/>
-          </g>
-          <text x="200" y="260" class="ring-label">sekor</text>
-          <text x="200" y="306" class="ring-label">tekor</text>
-          <text x="200" y="364" class="ring-label">kakor</text>
-        </svg>
-      </div>
-      <div class="circles__text reveal" id="circlesText"></div>
+    <div class="tiles__grid reveal-stagger">
+      <a class="tile" href="osada.html"><span class="tile__k">Osada</span><b>Jak żyje Whitewood</b><i>Rytm dnia, święta, pieniądz, zmartwienia, drewno i brzoza</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="kronika.html"><span class="tile__k">Kronika</span><b>Od czuwania do Imperium</b><i>Cała historia, epoka po epoce</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="powodz.html"><span class="tile__k">Powódź</span><b>Powódź Tysiąclecia</b><i>Co zabrała, co zostawiła, Szlamy Przemieńcowe, Dzień Ukojenia</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="krag.html"><span class="tile__k">Krąg</span><b>Władza rozproszona w drzewie</b><i>Kręgi wspólnoty i Kodeks Przyjęcia Obcych</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="ludy.html"><span class="tile__k">Ludy</span><b>Kto mówi w Whitewood</b><i>Cztery rodziny ras, dziewiętnaście gwar</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="bestiariusz.html"><span class="tile__k">Bestiariusz</span><b>Co żyje w wodzie</b><i>Szlamy, Istoty Wody, Rusałka</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="jezyk.html"><span class="tile__k">Birdfolk</span><b>Język wspólnoty równych</b><i>Zasady, pismo, słownik i szybki tłumacz</i><span class="tile__go" aria-hidden="true">→</span></a>
+      <a class="tile" href="postacie.html"><span class="tile__k">Postacie</span><b>Leothernowie i twarze Whitewood</b><i>Ród z nory-biblioteki i mieszkańcy osady</i><span class="tile__go" aria-hidden="true">→</span></a>
     </div>
-
-    <div class="codex">
-      <header class="codex__head reveal">
-        <h3>Kodeks Przyjęcia Obcych</h3>
-        <p>spisany pod Brzozowym Dębem</p>
-      </header>
-      <div class="codex__grid reveal-stagger" id="codex"></div>
-      <div class="hybrid-rules reveal">
-        <div><h4>Centaur · Minotaur · Satyr</h4><p>Przyjmowani w Drugim Kręgu. Po czasie i uznaniu — pełne prawa.</p></div>
-        <div><h4>Shifter</h4><p>Wymagana jawność natury przemiany. Silniejsza obserwacja w okresie próbnym.</p></div>
-        <div><h4>Simic Hybrid</h4><p>Najbardziej problematyczny przypadek. Pełna przejrzystość modyfikacji. Rada może odmówić Pierwszego Kręgu.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LUDY ============ -->
-<section class="section peoples" id="ludy">
-  <div class="wrap">
-    <header class="section__head">
-      <p class="eyebrow reveal">IV · Ludy</p>
-      <h2 class="reveal">Kto mówi w Whitewood</h2>
-      <p class="section__sub reveal">Cztery rodziny ras, dziewiętnaście gwar, jeden wspólny język. Każda grupa wniosła do Birdfolka swój rejestr — i swoje miejsce we wspólnocie.</p>
-    </header>
-    <div class="tabs reveal" role="tablist" id="peopleTabs">
-      <button role="tab" aria-selected="true" data-fam="all">Wszyscy</button>
-      <button role="tab" aria-selected="false" data-fam="birdfolk">Skrzydlaci</button>
-      <button role="tab" aria-selected="false" data-fam="beastfolk">Beastfolk</button>
-      <button role="tab" aria-selected="false" data-fam="hybrids">Hybrydy</button>
-      <button role="tab" aria-selected="false" data-fam="exotic">Egzotyczni</button>
-    </div>
-    <div class="people" id="people"></div>
-  </div>
-</section>
-
-<!-- ============ BESTIARIUSZ ============ -->
-<section class="section bestiary" id="bestiariusz">
-  <div class="wrap">
-    <header class="section__head">
-      <p class="eyebrow reveal">V · Bestiariusz</p>
-      <h2 class="reveal">Co żyje w wodzie</h2>
-      <p class="section__sub reveal">Wiedza niepisana, ale respektowana. Po Powodzi zmieniło się wszystko — także to, czego należy się bać.</p>
-    </header>
-    <div class="beasts reveal-stagger" id="beasts"></div>
-  </div>
-</section>
-
-<!-- ============ JĘZYK ============ -->
-<section class="section lang" id="jezyk">
-  <div class="wrap">
-    <header class="section__head">
-      <p class="eyebrow reveal">VI · Birdfolk</p>
-      <h2 class="reveal">Język wspólnoty równych</h2>
-      <p class="section__sub reveal">Wspólny Zwierzoludzki. Bez wielkich liter, bez rodzaju gramatycznego, bez przypadków. Zaprojektowany tak, by dało się go wymówić dziobem, pyskiem i trąbą.</p>
-    </header>
-
-    <div class="lang__pillars reveal-stagger">
-      <article><h3>brak wielkich liter</h3><p>Nikt nie jest gramatycznie „ważniejszy”. Imperialny dokument pisany WIELKIMI LITERAMI odbierany jest w Whitewood jako pyszałkowaty i agresywny.</p></article>
-      <article><h3>!istotność!</h3><p>Wykrzyknik nie oznacza krzyku, lecz istotność. Ruchomy, stawiany przed słowem, które w zdaniu jest najważniejsze. Imię bez znacznika jest niewidzialne.</p></article>
-      <article><h3>s · t · k</h3><p>Dystans mierzy się względem kręgu, nie siebie: <em>sen</em> — bliski mnie, <em>ten</em> — wspólny, <em>kan</em> — poza naszym kręgiem.</p></article>
-    </div>
-
-    <div class="lang__tools">
-      <!-- Emfaza -->
-      <div class="tool reveal">
-        <h3 class="tool__title">Ruchomy wykrzyknik</h3>
-        <p class="tool__desc">To samo zdanie, inna istotność.</p>
-        <div class="emph" id="emph">
-          <p class="emph__line" id="emphLine"></p>
-          <p class="emph__gloss" id="emphGloss"></p>
-          <div class="emph__dots" id="emphDots" role="tablist" aria-label="Warianty"></div>
-        </div>
-      </div>
-
-      <!-- Konwerter imion -->
-      <div class="tool reveal">
-        <h3 class="tool__title">Zapis imienia</h3>
-        <p class="tool__desc">Wpisz imię — zobacz je w Kuropatwie i w ptasiej wymowie (bez głosek wargowych).</p>
-        <label class="field">
-          <span class="visually-hidden">Imię</span>
-          <input id="nameInput" type="text" value="Imperator Wiktor" maxlength="40" autocomplete="off" spellcheck="false">
-        </label>
-        <dl class="name-out" id="nameOut"></dl>
-      </div>
-    </div>
-
-    <!-- Słownik -->
-    <div class="dict reveal">
-      <div class="dict__head">
-        <h3>Słownik</h3>
-        <label class="field field--search">
-          <span class="visually-hidden">Szukaj w słowniku</span>
-          <input id="dictSearch" type="search" placeholder="Szukaj: woda, sil, przyjaciel…" autocomplete="off">
-        </label>
-      </div>
-      <div class="chips" id="dictCats"></div>
-      <div class="dict__table" id="dictTable" role="list"></div>
-      <p class="dict__count" id="dictCount"></p>
-    </div>
-
-    <!-- Rok -->
-    <div class="year reveal">
-      <h3>karkor — rok cykliczny</h3>
-      <div class="year__wheel">
-        <div class="season s1"><b>drenha</b><span>wiosna</span><i>drzewa nadchodzą</i></div>
-        <div class="season s2"><b>rasgal</b><span>lato</span><i>ognisty dzień</i></div>
-        <div class="season s3"><b>drenło</b><span>jesień</span><i>drzewa, które były</i></div>
-        <div class="season s4"><b>silstrig</b><span>zima</span><i>wodna noc</i></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ LEOTHERN ============ -->
-<section class="section leothern" id="leothern">
-  <div class="wrap">
-    <div class="leothern__grid">
-      <div class="leothern__text">
-        <p class="eyebrow reveal">VII · Ród</p>
-        <h2 class="reveal">Leothernowie</h2>
-        <p class="leothern__motto reveal">Nie przybyli do Whitewood, by je zmienić.<br>Przybyli, bo rozpoznali miejsce, które nie wymagało zmiany — tylko opieki.</p>
-        <div class="prose reveal">
-          <p>Vulpini rzadko zakładają osady od podstaw. Leothernowie przyciągnęły pogłoski o nieudanych kopalniach przy granicy Świętego Lasu — dla wielu znak porażki, dla nich znak równowagi. Pierwsza nora nie została wykuta, lecz odzyskana.</p>
-          <p>Gdy przyszła Powódź, otworzyli wejścia, nie pytając, kim są przybywający. W zamian prosili tylko: <em>jeśli macie wiedzę — podzielcie się nią. Jeśli macie księgi — pozwólcie je przepisać. Jeśli macie umiejętności — zostawcie ich ślad.</em> Tak powstała biblioteka rodu.</p>
-        </div>
-      </div>
-      <div class="leothern__ethos reveal">
-        <p class="ethos__label">Etos, którego nigdy nie spisano</p>
-        <ol id="ethos"></ol>
-        <p class="ethos__foot">Powódź Tysiąclecia nie uczyniła z Leothernów bohaterów.<br><strong>Uczyniła ich strażnikami tego, co ocalało.</strong></p>
-      </div>
-    </div>
-    <div class="names reveal">
-      <div><code>!jack!</code><span>imię osobiste — publiczne, codzienne</span></div>
-      <div><code>!leothern!</code><span>imię rodowe — dziedziczne</span></div>
-      <div><code>!!leothern!!</code><span>imię prawdziwe — tylko w pełnym zaufaniu</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ POSTACIE ============ -->
-<section class="section cast" id="postacie">
-  <div class="wrap">
-    <header class="section__head">
-      <p class="eyebrow reveal">VIII · Postacie</p>
-      <h2 class="reveal">Twarze Whitewood</h2>
-    </header>
-    <div class="cast__grid reveal-stagger" id="cast"></div>
   </div>
 </section>
 
 </main>
 
-<footer class="footer">
-  <div class="wrap">
-    <p class="footer__farewell">silun strig</p>
-    <p class="footer__gloss">spokoju nocy</p>
-    <div class="footer__meta">
-      <p>Whitewood · Vetora — Krong<br>Świat kampanii D&amp;D <strong>Krąg Cieni</strong></p>
-      <p>Lore: „Whitewood”, „Birdfolk — Architektura języka v2.0”, „Jack — Vulpin”.<br>Historia Whitewood: rozwój według Mieszka.</p>
-    </div>
-  </div>
-</footer>
-
 <script src="js/data.js"></script>
+<script src="js/site.js"></script>
 <script src="js/lore.js"></script>
-<script src="js/main.js"></script>
+<script src="js/pages.js"></script>
 </body>
 </html>

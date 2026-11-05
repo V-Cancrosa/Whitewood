@@ -142,3 +142,49 @@ dolgali	Radość Ziemi (dożynki)	czas	dol + gali	propozycja Claude	propozycja
 strigga	Noc Głęboka (najdłuższa noc, święto zimy)	czas	strig + -ga; słowo z v2, nowe znaczenie święta	propozycja Claude	propozycja
 silhenko	mglik (mały mgielny stworek)	natura	silhen + -ko; „mała mgła”	propozycja Claude	propozycja
 galnatan	Kamienna Warownia (dom Galnów)	miejsca	galna (Tortle: skorupa-ród) + tan; „dom-skorupa”	propozycja Claude	propozycja
+nol	zero / pustka	liczby		Birdfolk v2	kanon
+un	jeden	liczby		Birdfolk v2	kanon
+do	dwa	liczby		Birdfolk v2	kanon
+tre	trzy	liczby		Birdfolk v2	kanon
+kar	cztery / kamień	liczby	kolizja: rozstrzyga kontekst	Birdfolk v2	kanon
+lin	pięć / ciąć	liczby	kolizja: rozstrzyga kontekst	Birdfolk v2	kanon
+son	sześć	liczby		Birdfolk v2	kanon
+sat	siedem	liczby		Birdfolk v2	kanon
+tok	osiem	liczby	t- dla spójności	Birdfolk v2	kanon
+nen	dziewięć	liczby		Birdfolk v2	kanon
+dek	dziesięć	liczby		Birdfolk v2	kanon
+kin	sto	liczby		Birdfolk v2	kanon
+nil	tysiąc	liczby	bezwargowe (mil byłoby wargowe)	Birdfolk v2	kanon
+unen	pierwszy	liczby	un + -en	Birdfolk v2	kanon
+doen	drugi	liczby	do + -en	Birdfolk v2	kanon
+nain	mój	zaimki	na + -in	Birdfolk v2	kanon
+tiin	twój	zaimki	ti + -in	Birdfolk v2	kanon
+sain	jego / jej	zaimki	sa + -in	Birdfolk v2	kanon
+natiin	nasz (inkluzywne)	zaimki	nati + -in	Birdfolk v2	kanon
+naorin	nasz (ekskluzywne)	zaimki	naor + -in	Birdfolk v2	kanon
+tiorin	wasz	zaimki	tior + -in	Birdfolk v2	kanon
+saorin	ich	zaimki	saor + -in	Birdfolk v2	kanon
+sen	ten (bliski mnie)	zaimki	s- = bliskie	Birdfolk v2	kanon
+ten	ten (wspólny)	zaimki	t- = wspólne	Birdfolk v2	kanon
+kan	tamten (poza kręgiem)	zaimki	k- = poza kręgiem	Birdfolk v2	kanon
+sete	tu	zaimki		Birdfolk v2	kanon
+tete	tam (wspólne)	zaimki		Birdfolk v2	kanon
+kate	tam daleko	zaimki		Birdfolk v2	kanon
+sena	teraz	czas		Birdfolk v2	kanon
+tena	wtedy	czas	przeszłość lub przyszłość, rozstrzyga kontekst	Birdfolk v2	kanon
+kana	kiedyś	czas		Birdfolk v2	kanon
+sina	kto?	zaimki	si- + na	Birdfolk v2	kanon
+sika	co?	zaimki	si- + ka	Birdfolk v2	kanon
+site	gdzie?	zaimki	si- + te	Birdfolk v2	kanon
+siten	kiedy?	zaimki	si- + ten	Birdfolk v2	kanon
+sito	jak?	zaimki	si- + to	Birdfolk v2	kanon
+sisu	dlaczego?	zaimki	si- + su	Birdfolk v2	kanon
+sidek	ile?	zaimki	si- + dek	Birdfolk v2	kanon
+sisen	który?	zaimki	si- + sen	Birdfolk v2	kanon
+ne	nie	formuły	morfem negacji	Birdfolk v2	kanon
+kira	droga	natura	kir + -a	Birdfolk v2	kanon
+drug-lupin	dziki wilk	natura		Birdfolk v2	kanon
+goron	ptak dziki	natura	gor + -on	Birdfolk v2	kanon
+silko	ryba (mała)	natura	sil + -ko	Birdfolk v2	kanon
+lakat	rybak	rzemiosło	lak + -at	Birdfolk v2	kanon
+silur	łódź	rzemiosło	sil + -ur	Birdfolk v2	kanon
