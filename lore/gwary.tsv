@@ -3,27 +3,27 @@
 # Gwary ptasie nie mają głosek wargowych (m, p, b, f, w), bo dziób ich nie wymówi.
 # kolumny: słowo | gwara | znaczenie | inspiracja brzmienia | status
 słowo	gwara	znaczenie	inspiracja	status
-kjurdag	krukowate	Dzień Pierwszego Słowa	„dzień dzioba”: kjur (dziób w gwarze Corvum) + skandynawskie dag	propozycja
-hljodlail	sowy	Noc Bez Słowa	islandzkie hljóð (cisza, dźwięk) + arabskie layl (noc)	propozycja
-rerehaki	drapieżne	Pierwszy Lot	maoryskie rere (lecieć) + własne	propozycja
-kalendassah	gallus	Dzień Kalendarza	śródziemnomorskie calendae + liturgiczne zakończenie	propozycja
-cartellia	luma	Dzień Listów	włoskie carta, cartella (kartka, list)	propozycja
-ottersanga	wodne	Pieśń Wydr	niderlandzkie otter + portugalskie canção	propozycja
-nomikagé	vulpini	Zejście	francuskie nom (imię) + japońskie kage (cień): „imię w cieniu”	propozycja
-ulvaadam	lupini	Noc Przysięgi	staronordyckie ulfr (wilk) + mongolskie naadam (święto)	propozycja
-hadolo	tabaxi	Noc Opowieści	suahili hadithi + joruba àlọ́ (opowieść)	propozycja
-qalahad	leonin	Dzień Danego Słowa	gyyz qal (słowo) + suahili ahadi (obietnica)	propozycja
-smritöna	loxodoni	Dzień Pamięci	sanskryckie smṛti (pamięć) + umlaut Loxodon	propozycja
-scealacorsa	harengon	Wyścig Wieści	irlandzkie scéal (wieść) + włoskie corsa (bieg)	propozycja
-sarvallwy	cervani	Ścieżka Poroża	fińskie sarvi (róg) + walijskie llwybr (ścieżka)	propozycja
-shlemmarkt	mapachi	Targ Partaczy	jidysz szlemiel (niezdara) + niderlandzkie markt	propozycja
-kleyndydd	jerbeen	Dzień Małych Rzeczy	jidysz kleyn (mały) + walijskie dydd (dzień)	propozycja
-stachelcuida	hedge	Obchód Kolców	szwajcarskoniemieckie Stachel (kolec) + portugalskie cuidar (opiekować się)	propozycja
-bidetropa	łasicowate	Dzień Ukrytych Ścieżek	baskijskie bide (droga) + rosyjskie tropa (ścieżka)	propozycja
-bjarnapir	ursine	Ostatnia Uczta	staroislandzkie bjarn (niedźwiedź) + rosyjskie pir (uczta)	propozycja
-sadadem	nietoperze	Noc Echa	arabskie sada (echo) + wietnamskie đêm (noc)	propozycja
-k'tk-tk'ra	thri-kreen	Rytm	kliknięcia chitynowego aparatu, apostrof = klik	propozycja
-galnathur	tortle	Znak Durinu	archaiczna gwara Tortle: galna (skorupa-ród) + -thur	propozycja
+kjurdag	krukowate	Dzień Pierwszego Słowa	„dzień dzioba”: kjur (dziób w gwarze Corvum) + skandynawskie dag	kanon
+hljodlail	sowy	Noc Bez Słowa	islandzkie hljóð (cisza, dźwięk) + arabskie layl (noc)	kanon
+rerehaki	drapieżne	Pierwszy Lot	maoryskie rere (lecieć) + własne	kanon
+kalendassah	gallus	Dzień Kalendarza	śródziemnomorskie calendae + liturgiczne zakończenie	kanon
+cartellia	luma	Dzień Listów	włoskie carta, cartella (kartka, list)	kanon
+ottersanga	wodne	Pieśń Wydr	niderlandzkie otter + portugalskie canção	kanon
+nomikagé	vulpini	Zejście	francuskie nom (imię) + japońskie kage (cień): „imię w cieniu”	kanon
+ulvaadam	lupini	Noc Przysięgi	staronordyckie ulfr (wilk) + mongolskie naadam (święto)	kanon
+hadolo	tabaxi	Noc Opowieści	suahili hadithi + joruba àlọ́ (opowieść)	kanon
+qalahad	leonin	Dzień Danego Słowa	gyyz qal (słowo) + suahili ahadi (obietnica)	kanon
+smritöna	loxodoni	Dzień Pamięci	sanskryckie smṛti (pamięć) + umlaut Loxodon	kanon
+scealacorsa	harengon	Wyścig Wieści	irlandzkie scéal (wieść) + włoskie corsa (bieg)	kanon
+sarvallwy	cervani	Ścieżka Poroża	fińskie sarvi (róg) + walijskie llwybr (ścieżka)	kanon
+shlemmarkt	mapachi	Targ Partaczy	jidysz szlemiel (niezdara) + niderlandzkie markt	kanon
+kleyndydd	jerbeen	Dzień Małych Rzeczy	jidysz kleyn (mały) + walijskie dydd (dzień)	kanon
+stachelcuida	hedge	Obchód Kolców	szwajcarskoniemieckie Stachel (kolec) + portugalskie cuidar (opiekować się)	kanon
+bidetropa	łasicowate	Dzień Ukrytych Ścieżek	baskijskie bide (droga) + rosyjskie tropa (ścieżka)	kanon
+bjarnapir	ursine	Ostatnia Uczta	staroislandzkie bjarn (niedźwiedź) + rosyjskie pir (uczta)	kanon
+sadadem	nietoperze	Noc Echa	arabskie sada (echo) + wietnamskie đêm (noc)	kanon
+k'tk-tk'ra	thri-kreen	Rytm	kliknięcia chitynowego aparatu, apostrof = klik	kanon
+galnathur	tortle	Znak Durinu	archaiczna gwara Tortle: galna (skorupa-ród) + -thur	kanon
 kjur	krukowate	dziób	z dokumentu Birdfolk v2	kanon
 kuran	krukowate	pierze szyi	z dokumentu Birdfolk v2	kanon
 brusz	vulpini	kufa	z dokumentu Birdfolk v2	kanon
@@ -31,7 +31,7 @@ kistur	vulpini	kita (ogon)	z dokumentu Birdfolk v2	kanon
 göran	loxodoni	trąba ceremonialna	z dokumentu Birdfolk v2	kanon
 karkän	loxodoni	kły symboliczne	z dokumentu Birdfolk v2	kanon
 galna	tortle	skorupa jako symbol rodu	z dokumentu Birdfolk v2	kanon
-hulhaad	sowy	nocny kod pohukiwań	pohukiwanie + arabskie hadd (granica, znak)	propozycja
-koersgeshrey	mapachi	kłótnia o kurs monet	niderlandzkie koers (kurs) + jidysz geszrej (krzyk)	propozycja
-dolkarnath	tortle	„wysoka podmurówka” (powiedzonko Galnów)	dolkar z Birdfolku + archaiczne -nath	propozycja
-galnaskar	tortle	kamień rodowy	galna (skorupa-ród) + skar (kamień)	propozycja
+hulhaad	sowy	nocny kod pohukiwań	pohukiwanie + arabskie hadd (granica, znak)	kanon
+koersgeshrey	mapachi	kłótnia o kurs monet	niderlandzkie koers (kurs) + jidysz geszrej (krzyk)	kanon
+dolkarnath	tortle	„wysoka podmurówka” (powiedzonko Galnów)	dolkar z Birdfolku + archaiczne -nath	kanon
+galnaskar	tortle	kamień rodowy	galna (skorupa-ród) + skar (kamień)	kanon

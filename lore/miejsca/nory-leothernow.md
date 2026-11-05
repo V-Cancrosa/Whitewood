@@ -1,8 +1,8 @@
 ---
 id: nory-leothernow
 nazwa: Nory Thorlenów
-birdfolk: —
-birdfolk_znaczenie: nazwa do ustalenia (zob. Imiona Vulpinów)
+birdfolk: !thorlene!-or doltan
+birdfolk_znaczenie: nora Thorlenów
 typ: Dawna kopalnia
 mapa: 13, 77
 status: kanon

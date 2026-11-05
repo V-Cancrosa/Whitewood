@@ -48,15 +48,15 @@ Ustalone: każdy Vulpin ma imię potoczne (Jack) i prawdziwe (Leothern). Prawdzi
 
 Ustalone: nazwa potoczna rodu to anagram prawdziwego imienia protoplasty, które jest zarazem prawdziwym imieniem rodu. Protoplasta miał to samo prawdziwe imię co Jack (sekret MG). Święto Vulpinów to Zejście: ceremonia prawdziwego imienia w najgłębszej części nory, w której lisię się urodziło.
 
-- [ ] **Anagram:** propozycja Thorlene (Thorlenowie, Nory Thorlenów). Inne możliwości: Lethoren, Northele, Holtener, Ethelorn, Rothelen.
-- [ ] **Podpis na mapie:** grafika mówi „Nory Leothernow”, a powinna mówić o wybranym anagramie.
-- [ ] **Ceremonia Zejścia:** szczegóły (spór, cisza, pieczęć, dar, `lanel`) czekają jako propozycje w `lore/vulpini.md`.
+- [x] **Anagram:** Thorlene (Thorlenowie, Nory Thorlenów; w Birdfolku `!thorlene!-or doltan`).
+- [ ] **Podpis na mapie:** grafika mówi „Nory Leothernow”, a powinna „Nory Thorlenów”.
+- [x] **Ceremonia Zejścia** (`dolkir`, w gwarze *nomikagé*): spór, cisza, pieczęć, dar, wyjście o świcie.
 - [ ] Poprawić tabelę imion w dokumencie Birdfolk v2 („`!leothern!` = imię rodowe”).
 - Zasada strony: niczyjego prawdziwego imienia nie pokazujemy graczom.
 
 ## Święta ras
 
-Ustalone: każda z ras ma swoje mniejsze i większe święta. Treść do wymyślenia później, zwłaszcza dla Vulpinów. W `lore/osada.md` czekają trzy szkice z `[?]`.
+Ustalone: szkice świąt wszystkich ras są w `lore/swieta.md`, z nazwami w Birdfolku i w gwarach. Można je dalej rozwijać.
 
 ## Wiara
 

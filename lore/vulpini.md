@@ -6,7 +6,7 @@ status: kanon
 
 <!--
 Zasady imion Vulpinów. Wyświetla się na stronie Postacie.
-„## Tytuł · MG” = tylko dla twórców, „[?]” = propozycja.
+„## Tytuł · MG” = tylko dla twórców, „” = propozycja.
 -->
 
 ## Dwa imiona
@@ -35,7 +35,7 @@ Ukryte przed graczami, bo razem z literą rodu i imieniem Jacka zdradzałoby taj
 
 Ród ma też imię prawdziwe: to prawdziwe imię jego protoplasty. Na zewnątrz ród używa nazwy potocznej, którą protoplasta ułożył jako **anagram** własnego prawdziwego imienia. Prawdziwe imię rodu leży więc na widoku, przed oczami wszystkich, i nikt go nie widzi. Lisi spryt w najczystszej postaci.
 
-[?] W rodzie Jacka nazwa potoczna brzmi **Thorlene**: Thorlenowie, Nory Thorlenów.
+W rodzie Jacka nazwa potoczna brzmi **Thorlene**: Thorlenowie, Nory Thorlenów.
 
 ## Zejście
 
@@ -43,15 +43,15 @@ Ród ma też imię prawdziwe: to prawdziwe imię jego protoplasty. Na zewnątrz 
 
 Tam, w głębi, lisię jest wystawiane na spór: kwestionuje się je, aż obroni się jakimś słowem albo przed jakimś słowem nie zdoła się obronić. To słowo staje się jego prawdziwym imieniem.
 
-- [?] **Nazwa.** W Birdfolku `dolkir`, „iść w ziemię”. W gwarze Vulpinów *nomikagé*, „imię w cieniu”. Postronni mówią po prostu, że „lisy zeszły pod ziemię”.
-- [?] **Kiedy.** Nikt nie zapowiada dnia. Lisię dowiaduje się wieczorem, gdy dorośli gaszą światła w górnych korytarzach. Mówi się: *kto pyta, kiedy zejdzie, ten jeszcze nie zejdzie.*
-- [?] **Zejście.** Schodzi się po ciemku, a na dole pali się jedno światło. Na górze nie zostaje nikt, nawet przyjaciele rodziny. To jedyna noc w roku, kiedy drzwi nory, zwykle otwarte dla każdego, są zamknięte.
-- [?] **Spór.** Starsi rodu po kolei rzucają lisięciu słowa, wszystkie na literę rodu, i każde słowo to zarzut albo obietnica: *jesteś taki, nie jesteś taki, będziesz taki.* Lisię musi odpowiedzieć: odeprzeć, przekręcić, obrócić w żart, przyjąć i obronić. Wolno mu używać całej vulpińskiej sztuki dwuznaczności. Wolno mu też podsunąć własne słowo.
-- [?] **Cisza.** Spór trwa, dopóki po którymś słowie nie zapada cisza: nikt z rodu nie ma już nic do dodania, a lisię też milczy. *Imię to słowo, po którym zapada cisza.* Bywa, że to słowo, którym lisię wygrało. Bywa, że to słowo, przed którym nie umiało się obronić. Obie drogi są równie dobre i nikt nigdy nie mówi, którą z nich ktoś przeszedł.
-- [?] **Pieczęć.** Najstarszy wypowiada imię raz, na głos. Potem lisię powtarza je samo. Potem każdy z rodu powtarza je szeptem, jeden raz, i od tej chwili nikt nie wypowiada go głośno poza rodziną.
-- [?] **Dar.** Każdy obecny daje lisięciu jedną rzecz, której nie mówi się dzieciom: historię rodu, przepis, sekret, przestrogę. Tak działa vulpiński kult przekazywania wiedzy. Prawdziwe imię otwiera też dostęp do tej części rodowej wiedzy, której nie pokazuje się postronnym.
-- [?] **Wyjście.** Wychodzą o świcie. Postronni widzą tylko tyle, że rodzina zniknęła na noc, a lisię jest cichsze niż zwykle i dziwnie z siebie zadowolone. Pytanie Vulpina, czy już „schodził”, to faux pas.
-- [?] **Legenda.** Mówi się o lisięciu, które spierało się do świtu i nikt nie umiał zamilknąć. Imieniem zostało pierwsze słowo, które padło, gdy przez szczelinę wpadło słońce.
+- **Nazwa.** W Birdfolku `dolkir`, „iść w ziemię”. W gwarze Vulpinów *nomikagé*, „imię w cieniu”. Postronni mówią po prostu, że „lisy zeszły pod ziemię”.
+- **Kiedy.** Nikt nie zapowiada dnia. Lisię dowiaduje się wieczorem, gdy dorośli gaszą światła w górnych korytarzach. Mówi się: *kto pyta, kiedy zejdzie, ten jeszcze nie zejdzie.*
+- **Zejście.** Schodzi się po ciemku, a na dole pali się jedno światło. Na górze nie zostaje nikt, nawet przyjaciele rodziny. To jedyna noc w roku, kiedy drzwi nory, zwykle otwarte dla każdego, są zamknięte.
+- **Spór.** Starsi rodu po kolei rzucają lisięciu słowa, wszystkie na literę rodu, i każde słowo to zarzut albo obietnica: *jesteś taki, nie jesteś taki, będziesz taki.* Lisię musi odpowiedzieć: odeprzeć, przekręcić, obrócić w żart, przyjąć i obronić. Wolno mu używać całej vulpińskiej sztuki dwuznaczności. Wolno mu też podsunąć własne słowo.
+- **Cisza.** Spór trwa, dopóki po którymś słowie nie zapada cisza: nikt z rodu nie ma już nic do dodania, a lisię też milczy. *Imię to słowo, po którym zapada cisza.* Bywa, że to słowo, którym lisię wygrało. Bywa, że to słowo, przed którym nie umiało się obronić. Obie drogi są równie dobre i nikt nigdy nie mówi, którą z nich ktoś przeszedł.
+- **Pieczęć.** Najstarszy wypowiada imię raz, na głos. Potem lisię powtarza je samo. Potem każdy z rodu powtarza je szeptem, jeden raz, i od tej chwili nikt nie wypowiada go głośno poza rodziną.
+- **Dar.** Każdy obecny daje lisięciu jedną rzecz, której nie mówi się dzieciom: historię rodu, przepis, sekret, przestrogę. Tak działa vulpiński kult przekazywania wiedzy. Prawdziwe imię otwiera też dostęp do tej części rodowej wiedzy, której nie pokazuje się postronnym.
+- **Wyjście.** Wychodzą o świcie. Postronni widzą tylko tyle, że rodzina zniknęła na noc, a lisię jest cichsze niż zwykle i dziwnie z siebie zadowolone. Pytanie Vulpina, czy już „schodził”, to faux pas.
+- **Legenda.** Mówi się o lisięciu, które spierało się do świtu i nikt nie umiał zamilknąć. Imieniem zostało pierwsze słowo, które padło, gdy przez szczelinę wpadło słońce.
 
 ## W Birdfolku
 
@@ -62,11 +62,10 @@ Tam, w głębi, lisię jest wystawiane na spór: kwestionuje się je, aż obroni
 
 - Protoplasta rodu miał to samo prawdziwe imię co Jack: **Leothern**. Nie wiadomo, czy ta wiadomość kiedykolwiek wyjdzie na jaw.
 - Skoro prawdziwe imię rodu to Leothern, a nazwa potoczna to jego anagram, Jack nosi prawdziwe imię całego rodu.
-- [?] Na Zejściu Jacka po słowie „Leothern” zapadła cisza. Starsi mogli wiedzieć, co to znaczy, i milczeć. Mogli też nie wiedzieć. To miejsce na haczyk.
+- Na Zejściu Jacka po słowie „Leothern” zapadła cisza. Starsi mogli wiedzieć, co to znaczy, i milczeć. Mogli też nie wiedzieć. To miejsce na haczyk.
 
 ## Otwarte pytania · MG
 
-- Czy Thorlene, czy inny anagram? Inne możliwości z tych samych liter: Lethoren, Northele, Holtener, Ethelorn, Rothelen.
-- Mapa ma podpis „Nory Leothernow”. Po wyborze anagramu podpis trzeba poprawić na grafice.
+- Mapa ma podpis „Nory Leothernow”. Trzeba go poprawić na grafice na „Nory Thorlenów”.
 - Birdfolk v2 (dokument w projekcie) ma w tabeli imion wiersz „`!leothern!` = imię rodowe”. Trzeba go poprawić według tych zasad.
 - Czy Zejście ma odpowiednik u innych ras? Święta pozostałych ras do przemyślenia.

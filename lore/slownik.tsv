@@ -188,63 +188,63 @@ goron	ptak dziki	natura	gor + -on	Birdfolk v2	kanon
 silko	ryba (mała)	natura	sil + -ko	Birdfolk v2	kanon
 lakat	rybak	rzemiosło	lak + -at	Birdfolk v2	kanon
 silur	łódź	rzemiosło	sil + -ur	Birdfolk v2	kanon
-unensal	Dzień Pierwszego Słowa (święto: krukowate)	święta	unen + sal; „pierwsze mówienie”	propozycja Claude	propozycja
-nesalstrig	Noc Bez Słowa (święto: sowy)	święta	ne + sal + strig; „noc bez mówienia”	propozycja Claude	propozycja
-unenkira	Pierwszy Lot (święto: drapieżne)	święta	unen + kira; „pierwsza droga”	propozycja Claude	propozycja
-karkorsal	Dzień Kalendarza (święto: gallus)	święta	karkor + sal; „mówienie roku”	propozycja Claude	propozycja
-kosungal	Dzień Listów (święto: luma)	święta	kosun + gal; „dzień wspólnego czucia”	propozycja Claude	propozycja
-olonsal	Pieśń Wydr (święto: wodne)	święta	olon (słowo wydr) + sal; „mowa spokojnego nurtu”	propozycja Claude	propozycja
-dolkir	Zejście (święto: vulpini)	święta	dol + kir; „iść w ziemię”	propozycja Claude	propozycja
-korsilorga	Noc Przysięgi (święto: lupini)	święta	kor + silorga; „pełnia kręgu”	propozycja Claude	propozycja
-salkira	Noc Opowieści (święto: tabaxi)	święta	sal + kira; „mówiona droga”	propozycja Claude	propozycja
-donsal	Dzień Danego Słowa (święto: leonin)	święta	don + sal; „dane słowo”	propozycja Claude	propozycja
-länło	Dzień Pamięci (święto: loxodoni)	święta	lan + ło, z loksodońskim umlautem; „wiedza, która była”	propozycja Claude	propozycja
-tekkira	Wyścig Wieści (święto: harengon)	święta	tek + kira; „droga usłyszanego”	propozycja Claude	propozycja
-lanoldren	Ścieżka Poroża (święto: cervani)	święta	lanol + dren; „drzewo głowy”, czyli poroże	propozycja Claude	propozycja
-strigikatol	Targ Partaczy (święto: mapachi)	święta	strigi-kat + -ol; „miejsce smutnej roboty”	propozycja Claude	propozycja
-galkoir	Dzień Małych Rzeczy (święto: jerbeen)	święta	galko + -ir; „chwilki”	propozycja Claude	propozycja
-kosuntan	Obchód Kolców (święto: hedge)	święta	kosun + tan; „współczucie w domu”	propozycja Claude	propozycja
-kirirgal	Dzień Ukrytych Ścieżek (święto: łasicowate)	święta	kirir + gal; „dzień tropów”	propozycja Claude	propozycja
-tarkaga	Ostatnia Uczta (święto: ursine)	święta	tar-ka + -ga; „wielkie najedzenie”	propozycja Claude	propozycja
-tekkirstrig	Noc Echa (święto: nietoperze)	święta	tek + kir + strig; „noc idącego słyszenia”	propozycja Claude	propozycja
-tekorgal	Dzień Progu (święto: hybrydy)	święta	tekor + gal; „dzień Drugiego Kręgu”	propozycja Claude	propozycja
-dakkir	Rytm (święto: thri-kreen)	święta	dak + kir; „idące kucie”, czyli rytm	propozycja Claude	propozycja
-durinkarlin	Znak Durinu (święto: tortle)	święta	durin + kar + lin; „pokolenie wycięte w kamieniu”	propozycja Claude	propozycja
-karkordurin	Spotkanie Powolnych (Ursine i Tortle)	święta	karkor + durin; „rok i pokolenie”: spotkanie dwóch miar czasu	propozycja Claude	propozycja
-tankir	próg	miejsca	tan + kir; „gdzie dom przechodzi w drogę”	propozycja Claude	propozycja
-kotar	wspólny stół, wspólny posiłek	formuły	ko- + tar; „brać razem”	propozycja Claude	propozycja
-strigsal	nocny kod pohukiwań Sów	formuły	strig + sal; „nocna mowa”	propozycja Claude	propozycja
-silantarko	korojad (szkodnik brzóz)	natura	silan + tar + -ko; „mały, co bierze brzozę”	propozycja Claude	propozycja
-hensilko	skoczyryba	natura	hen + silko; „ryba powietrza”	propozycja Claude	propozycja
-siltarko	wodny szczur	natura	sil + tar + -ko; „mały, co bierze z wody”	propozycja Claude	propozycja
-sikaga	coś większego, nieznany potwór	natura	si- + ka + -ga; „wielkie co?”	propozycja Claude	propozycja
-donkir	odprawienie Przemieńcowego	religia	don + kir; „dać dojść”	propozycja Claude	propozycja
-karorkor	sznurek monet; miara bogactwa	rzemiosło	karor + kor; „krąg metalu”	propozycja Claude	propozycja
-galkat	dzień pracy (miara w barterze)	rzemiosło	gal + kat; „dzień robienia”	propozycja Claude	propozycja
-dolkar	podmurówka	rzemiosło	dol + kar; „ziemia-kamień”	propozycja Claude	propozycja
-dolkaron	„wysoka podmurówka”: przesada udająca konieczność	formuły	dolkar + -on; powiedzonko od Galnów	propozycja Claude	propozycja
-durtankar	kamień rodowy (Tortle)	rzemiosło	durtan + kar; „kamień rodu”	propozycja Claude	propozycja
-kanatsil	Szlam Przemieńcowy	natura	kanat + sil; „przodek w wodzie”	propozycja Claude	propozycja
-dolsildur	szlam	natura	dolsil + dur; „żywe mokradło”	propozycja Claude	propozycja
-durtanol	Wyspa Zachodnia	miejsca	durtan + -ol; „miejsce rodów”	propozycja Claude	propozycja
-kosenol	Wyspa Wschodnia	miejsca	kosen + -ol; „miejsce powitania”	propozycja Claude	propozycja
-kirasil	most	miejsca	kira + sil; „droga nad wodą”	propozycja Claude	propozycja
-kordol	wyspa	natura	kor + dol; „ziemia w kręgu wody”	propozycja Claude	propozycja
-silkirir	delta	natura	silkir + -ir; „rzeki”	propozycja Claude	propozycja
-doltan	nora	miejsca	dol + tan; „dom w ziemi”	propozycja Claude	propozycja
-doltarol	kopalnia	miejsca	dol + tar + -ol; „miejsce brania z ziemi”	propozycja Claude	propozycja
-dolkira	szyb	miejsca	dol + kira; „droga w ziemię” (pokrewne `dolkir`, Zejście)	propozycja Claude	propozycja
-trinras	magia	natura	trin + ras; „gwiezdny ogień”	propozycja Claude	propozycja
-salsun	muzyka, śpiew	formuły	sal + sun; „mowa uczuć”	propozycja Claude	propozycja
-salsunur	instrument	rzemiosło	salsun + -ur; „narzędzie muzyki”	propozycja Claude	propozycja
-salsunurko	kalimba	rzemiosło	salsunur + -ko; „mały instrument”	propozycja Claude	propozycja
-linsalur	skrzypce	rzemiosło	lin + sal + -ur; „narzędzie, które mówi cięciem”	propozycja Claude	propozycja
-kakrenat	elf	rodzina	kakren + -at; „ten zza granicy lasu”	propozycja Claude	propozycja
-drug-harengon	zając dziki	natura	modyfikator dziki + Harengon	propozycja Claude	propozycja
-silanin	biały	natura	silan + -in; „brzozowy”	propozycja Claude	propozycja
-unlanoldren	jednorożec	natura	un + lanoldren; „jedno poroże”	propozycja Claude	propozycja
-landrenka	lekarstwo	rzemiosło	landren + -ka; „rzecz z ziół”	propozycja Claude	propozycja
-trinor	bóstwo, bóg, bogini	religia	trin + -or; „wielki gwiezdny”, jak rasor i silor	propozycja Claude	propozycja
-trinorkor	zakon (pojęcie imperialne)	religia	trinor + kor; „krąg bóstwa”	propozycja Claude	propozycja
-körentanko	kapliczka	religia	kören-tan + -ko; „mała świątynia”	propozycja Claude	propozycja
-tangoron	kura (ptak domowy); przy Gallusach się tego słowa nie używa	natura	tan + goron; „ptak domowy”	propozycja Claude	propozycja
+unensal	Dzień Pierwszego Słowa (święto: krukowate)	święta	unen + sal; „pierwsze mówienie”	Claude, zatwierdzone	kanon
+nesalstrig	Noc Bez Słowa (święto: sowy)	święta	ne + sal + strig; „noc bez mówienia”	Claude, zatwierdzone	kanon
+unenkira	Pierwszy Lot (święto: drapieżne)	święta	unen + kira; „pierwsza droga”	Claude, zatwierdzone	kanon
+karkorsal	Dzień Kalendarza (święto: gallus)	święta	karkor + sal; „mówienie roku”	Claude, zatwierdzone	kanon
+kosungal	Dzień Listów (święto: luma)	święta	kosun + gal; „dzień wspólnego czucia”	Claude, zatwierdzone	kanon
+olonsal	Pieśń Wydr (święto: wodne)	święta	olon (słowo wydr) + sal; „mowa spokojnego nurtu”	Claude, zatwierdzone	kanon
+dolkir	Zejście (święto: vulpini)	święta	dol + kir; „iść w ziemię”	Claude, zatwierdzone	kanon
+korsilorga	Noc Przysięgi (święto: lupini)	święta	kor + silorga; „pełnia kręgu”	Claude, zatwierdzone	kanon
+salkira	Noc Opowieści (święto: tabaxi)	święta	sal + kira; „mówiona droga”	Claude, zatwierdzone	kanon
+donsal	Dzień Danego Słowa (święto: leonin)	święta	don + sal; „dane słowo”	Claude, zatwierdzone	kanon
+länło	Dzień Pamięci (święto: loxodoni)	święta	lan + ło, z loksodońskim umlautem; „wiedza, która była”	Claude, zatwierdzone	kanon
+tekkira	Wyścig Wieści (święto: harengon)	święta	tek + kira; „droga usłyszanego”	Claude, zatwierdzone	kanon
+lanoldren	Ścieżka Poroża (święto: cervani)	święta	lanol + dren; „drzewo głowy”, czyli poroże	Claude, zatwierdzone	kanon
+strigikatol	Targ Partaczy (święto: mapachi)	święta	strigi-kat + -ol; „miejsce smutnej roboty”	Claude, zatwierdzone	kanon
+galkoir	Dzień Małych Rzeczy (święto: jerbeen)	święta	galko + -ir; „chwilki”	Claude, zatwierdzone	kanon
+kosuntan	Obchód Kolców (święto: hedge)	święta	kosun + tan; „współczucie w domu”	Claude, zatwierdzone	kanon
+kirirgal	Dzień Ukrytych Ścieżek (święto: łasicowate)	święta	kirir + gal; „dzień tropów”	Claude, zatwierdzone	kanon
+tarkaga	Ostatnia Uczta (święto: ursine)	święta	tar-ka + -ga; „wielkie najedzenie”	Claude, zatwierdzone	kanon
+tekkirstrig	Noc Echa (święto: nietoperze)	święta	tek + kir + strig; „noc idącego słyszenia”	Claude, zatwierdzone	kanon
+tekorgal	Dzień Progu (święto: hybrydy)	święta	tekor + gal; „dzień Drugiego Kręgu”	Claude, zatwierdzone	kanon
+dakkir	Rytm (święto: thri-kreen)	święta	dak + kir; „idące kucie”, czyli rytm	Claude, zatwierdzone	kanon
+durinkarlin	Znak Durinu (święto: tortle)	święta	durin + kar + lin; „pokolenie wycięte w kamieniu”	Claude, zatwierdzone	kanon
+karkordurin	Spotkanie Powolnych (Ursine i Tortle)	święta	karkor + durin; „rok i pokolenie”: spotkanie dwóch miar czasu	Claude, zatwierdzone	kanon
+tankir	próg	miejsca	tan + kir; „gdzie dom przechodzi w drogę”	Claude, zatwierdzone	kanon
+kotar	wspólny stół, wspólny posiłek	formuły	ko- + tar; „brać razem”	Claude, zatwierdzone	kanon
+strigsal	nocny kod pohukiwań Sów	formuły	strig + sal; „nocna mowa”	Claude, zatwierdzone	kanon
+silantarko	korojad (szkodnik brzóz)	natura	silan + tar + -ko; „mały, co bierze brzozę”	Claude, zatwierdzone	kanon
+hensilko	skoczyryba	natura	hen + silko; „ryba powietrza”	Claude, zatwierdzone	kanon
+siltarko	wodny szczur	natura	sil + tar + -ko; „mały, co bierze z wody”	Claude, zatwierdzone	kanon
+sikaga	coś większego, nieznany potwór	natura	si- + ka + -ga; „wielkie co?”	Claude, zatwierdzone	kanon
+donkir	odprawienie Przemieńcowego	religia	don + kir; „dać dojść”	Claude, zatwierdzone	kanon
+karorkor	sznurek monet; miara bogactwa	rzemiosło	karor + kor; „krąg metalu”	Claude, zatwierdzone	kanon
+galkat	dzień pracy (miara w barterze)	rzemiosło	gal + kat; „dzień robienia”	Claude, zatwierdzone	kanon
+dolkar	podmurówka	rzemiosło	dol + kar; „ziemia-kamień”	Claude, zatwierdzone	kanon
+dolkaron	„wysoka podmurówka”: przesada udająca konieczność	formuły	dolkar + -on; powiedzonko od Galnów	Claude, zatwierdzone	kanon
+durtankar	kamień rodowy (Tortle)	rzemiosło	durtan + kar; „kamień rodu”	Claude, zatwierdzone	kanon
+kanatsil	Szlam Przemieńcowy	natura	kanat + sil; „przodek w wodzie”	Claude, zatwierdzone	kanon
+dolsildur	szlam	natura	dolsil + dur; „żywe mokradło”	Claude, zatwierdzone	kanon
+durtanol	Wyspa Zachodnia	miejsca	durtan + -ol; „miejsce rodów”	Claude, zatwierdzone	kanon
+kosenol	Wyspa Wschodnia	miejsca	kosen + -ol; „miejsce powitania”	Claude, zatwierdzone	kanon
+kirasil	most	miejsca	kira + sil; „droga nad wodą”	Claude, zatwierdzone	kanon
+kordol	wyspa	natura	kor + dol; „ziemia w kręgu wody”	Claude, zatwierdzone	kanon
+silkirir	delta	natura	silkir + -ir; „rzeki”	Claude, zatwierdzone	kanon
+doltan	nora	miejsca	dol + tan; „dom w ziemi”	Claude, zatwierdzone	kanon
+doltarol	kopalnia	miejsca	dol + tar + -ol; „miejsce brania z ziemi”	Claude, zatwierdzone	kanon
+dolkira	szyb	miejsca	dol + kira; „droga w ziemię” (pokrewne `dolkir`, Zejście)	Claude, zatwierdzone	kanon
+trinras	magia	natura	trin + ras; „gwiezdny ogień”	Claude, zatwierdzone	kanon
+salsun	muzyka, śpiew	formuły	sal + sun; „mowa uczuć”	Claude, zatwierdzone	kanon
+salsunur	instrument	rzemiosło	salsun + -ur; „narzędzie muzyki”	Claude, zatwierdzone	kanon
+salsunurko	kalimba	rzemiosło	salsunur + -ko; „mały instrument”	Claude, zatwierdzone	kanon
+linsalur	skrzypce	rzemiosło	lin + sal + -ur; „narzędzie, które mówi cięciem”	Claude, zatwierdzone	kanon
+kakrenat	elf	rodzina	kakren + -at; „ten zza granicy lasu”	Claude, zatwierdzone	kanon
+drug-harengon	zając dziki	natura	modyfikator dziki + Harengon	Claude, zatwierdzone	kanon
+silanin	biały	natura	silan + -in; „brzozowy”	Claude, zatwierdzone	kanon
+unlanoldren	jednorożec	natura	un + lanoldren; „jedno poroże”	Claude, zatwierdzone	kanon
+landrenka	lekarstwo	rzemiosło	landren + -ka; „rzecz z ziół”	Claude, zatwierdzone	kanon
+trinor	bóstwo, bóg, bogini	religia	trin + -or; „wielki gwiezdny”, jak rasor i silor	Claude, zatwierdzone	kanon
+trinorkor	zakon (pojęcie imperialne)	religia	trinor + kor; „krąg bóstwa”	Claude, zatwierdzone	kanon
+körentanko	kapliczka	religia	kören-tan + -ko; „mała świątynia”	Claude, zatwierdzone	kanon
+tangoron	kura (ptak domowy); przy Gallusach się tego słowa nie używa	natura	tan + goron; „ptak domowy”	Claude, zatwierdzone	kanon
