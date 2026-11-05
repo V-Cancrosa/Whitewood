@@ -16,7 +16,8 @@ Strona jest statyczna: HTML, CSS i JS, bez budowania i bez zależności.
 | `ludy.html` | rodziny ras i gwary |
 | `bestiariusz.html` | Szlamy, Istoty Wody, Rusałka |
 | `jezyk.html` | Birdfolk: zasady, zapis imion, **szybki tłumacz**, słownik, pory roku |
-| `postacie.html` | ród Leothernów i twarze Whitewood |
+| `postacie.html` | ród Thorlenów, imiona Vulpinów i twarze Whitewood |
+| `opowiesc.html` | **tryb opowieści**: wspomnienia Jacka do przeczytania na głos, ekran po ekranie, na tle mapy |
 | `miejsce.html?id=…` | pełna strona jednego miejsca (generowana z pliku w `lore/miejsca/`) |
 | `pracownia.html` | tylko dla twórców: propozycje, słowa, miejsca do opisania, otwarte pytania |
 
@@ -41,6 +42,10 @@ Lore jest w katalogu **`lore/`**. To tymi plikami wymieniasz się między czatam
 |---|---|
 | `lore/osada.md` | zasady całej osady |
 | `lore/powodz.md` | pełna strona o Powodzi |
+| `lore/wspomnienia.md` | Whitewood, jakie zostawił Jack: teksty do czytania graczom (`## Tytuł [id-miejsca]`) |
+| `lore/vulpini.md` | imiona Vulpinów, Zejście |
+| `lore/swieta.md` | święta ras |
+| `lore/gwary.tsv` | słowa z gwar ras |
 | `lore/miejsca/*.md` | jedno miejsce = jeden plik; wzór w `_SZABLON.md` |
 | `lore/ustawienia.json` | kolejność miejsc na mapie |
 | `lore/slownik.tsv` | słownik Birdfolk (kolumny rozdzielone tabulatorem, można wkleić do Arkuszy Google) |

@@ -41,7 +41,7 @@
   /* ---------- menu ---------- */
   const PAGES = [
     ["osada.html", "Osada"], ["index.html#atlas", "Atlas"], ["kronika.html", "Kronika"], ["powodz.html", "Powódź"],
-    ["krag.html", "Krąg"], ["ludy.html", "Ludy"], ["bestiariusz.html", "Bestiariusz"], ["jezyk.html", "Birdfolk"], ["postacie.html", "Postacie"]
+    ["krag.html", "Krąg"], ["ludy.html", "Ludy"], ["bestiariusz.html", "Bestiariusz"], ["jezyk.html", "Birdfolk"], ["postacie.html", "Postacie"], ["opowiesc.html", "Opowieść"]
   ];
   const here = (location.pathname.split("/").pop() || "index.html");
   const brand = `<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29"/><path d="M32 12v40M32 24l-9-7M32 30l10-8M32 38l-11-6M32 44l9-5"/></svg>`;

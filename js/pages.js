@@ -485,17 +485,113 @@
       <p class="hero-card__quote">${esc(c.quote)}</p></article>`).join("");
 
   /* =========================================================
+     WSPOMNIENIA JACKA — tryb opowieści (opowiesc.html)
+     ========================================================= */
+  const ID_RE = /\s*\[([a-z0-9-]+)\]\s*$/;
+  const memories = () => L.doc("wspomnienia").then(doc => doc.sections.filter(s => !s.gm).map(s => {
+    const m = s.title.match(ID_RE); return { ...s, title: s.title.replace(ID_RE, ""), place: m ? m[1] : "calosc" };
+  }));
+  WW.memories = memories;
+  // kadr mapy: gdzie ustawić tło (w %), żeby punkt (x, y) był na środku kontenera W×H przy szerokości mapy s×W
+  const frame = (x, y, s, W, H) => {
+    const iw = W * s, ih = iw * 1024 / 1536, c = v => Math.min(100, Math.max(0, v));
+    return { bx: iw > W ? c((iw * x / 100 - W / 2) / (iw - W) * 100) : 50, by: ih > H ? c((ih * y / 100 - H / 2) / (ih - H) * 100) : 50 };
+  };
+
+  const story = $("#story");
+  if (story) {
+    Promise.all([memories(), L.places(), L.doc("wspomnienia")]).then(([mem, places, doc]) => {
+      if (!mem.length) {
+        story.innerHTML = `<div class="story__empty wrap"><p class="eyebrow">Opowieść</p><h1>${esc(doc.name)}</h1><p>Wspomnienia Jacka czekają jeszcze na zatwierdzenie.</p></div>`;
+        return;
+      }
+      const gm = doc.sections.find(s => s.gm);
+      let i = 0, size = 0;
+      try { size = +localStorage.getItem("ww-story-size") || 0; } catch {}
+      story.innerHTML = `
+        <div class="story__bg" aria-hidden="true"><div class="story__map"></div><div class="story__map story__map--next"></div><span class="story__pin"></span></div>
+        <div class="story__veil" aria-hidden="true"></div>
+        <article class="story__card wrap">
+          <p class="story__kicker"><span>${esc(doc.name)}</span> · <span class="story__count"></span></p>
+          <h1 class="story__title"></h1>
+          <div class="story__text"></div>
+          <p class="story__place"></p>
+        </article>
+        <nav class="story__nav wrap" aria-label="Nawigacja opowieści">
+          <button class="story__btn" data-d="-1" aria-label="Poprzednie">←</button>
+          <div class="story__dots"></div>
+          <button class="story__btn" data-d="1" aria-label="Następne">→</button>
+          <div class="story__tools">
+            <button class="story__size" data-s="-1" aria-label="Mniejszy tekst">A−</button>
+            <button class="story__size" data-s="1" aria-label="Większy tekst">A+</button>
+            ${gm ? '<button class="story__gm" aria-pressed="false">Co się zmieniło <span class="gm-tag">MG</span></button>' : ""}
+          </div>
+        </nav>
+        ${gm ? `<aside class="story__gmbox" hidden><h2>${esc(gm.title)} ${gmTag}</h2>${gm.html}</aside>` : ""}`;
+      const maps = $$(".story__map", story), pin = $(".story__pin", story), card = $(".story__card", story);
+      const dots = $(".story__dots", story);
+      dots.innerHTML = mem.map((m, k) => `<button aria-label="${esc(m.title)}"></button>`).join("");
+      $$("button", dots).forEach((b, k) => b.addEventListener("click", () => go(k)));
+      let front = 0;
+      const applySize = () => { story.style.setProperty("--story-scale", 1 + size * 0.12); try { localStorage.setItem("ww-story-size", size); } catch {} };
+      const go = k => {
+        i = (k + mem.length) % mem.length; const m = mem[i];
+        const pl = places.find(p => p.id === m.place);
+        const pt = pl && pl.points[0];
+        const W = story.clientWidth, H = story.clientHeight;
+        const cover = Math.max(1, (H * 1536 / 1024) / W);   // mapa zawsze pokrywa cały ekran
+        const s = (pt ? 2.6 : 1.12) * cover, [x, y] = pt || [50, 48], f = frame(x, y, s, W, H);
+        const next = maps[1 - front];
+        next.style.backgroundSize = `${s * 100}% auto`;
+        next.style.backgroundPosition = `${f.bx}% ${f.by}%`;
+        next.classList.add("is-on"); maps[front].classList.remove("is-on"); front = 1 - front;
+        if (pt) {
+          const iw = W * s, ih = iw * 1024 / 1536;
+          pin.style.left = ((W - iw) * f.bx / 100 + iw * x / 100) + "px"; pin.style.top = ((H - ih) * f.by / 100 + ih * y / 100) + "px"; pin.hidden = false;
+        } else pin.hidden = true;
+        card.classList.remove("is-in"); void card.offsetWidth; card.classList.add("is-in");
+        $(".story__count", story).textContent = `${i + 1} / ${mem.length}`;
+        $(".story__title", story).textContent = m.title;
+        $(".story__text", story).innerHTML = m.html;
+        $(".story__place", story).innerHTML = pl ? `<a href="miejsce.html?id=${encodeURIComponent(pl.id)}">${esc(pl.name)} na mapie →</a>` : "";
+        $$("button", dots).forEach((b, k) => b.setAttribute("aria-current", k === i));
+        history.replaceState(null, "", "#" + m.place + (mem.filter(n => n.place === m.place).length > 1 ? "-" + i : ""));
+        $(".story__text", story).scrollTop = 0;
+      };
+      $$(".story__btn", story).forEach(b => b.addEventListener("click", () => go(i + +b.dataset.d)));
+      $$(".story__size", story).forEach(b => b.addEventListener("click", () => { size = Math.max(-2, Math.min(4, size + +b.dataset.s)); applySize(); }));
+      const gmBtn = $(".story__gm", story);
+      if (gmBtn) gmBtn.addEventListener("click", () => { const box = $(".story__gmbox", story); box.hidden = !box.hidden; gmBtn.setAttribute("aria-pressed", !box.hidden); });
+      document.addEventListener("keydown", e => {
+        if (/input|textarea/i.test(document.activeElement.tagName)) return;
+        if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") { e.preventDefault(); go(i + 1); }
+        if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); go(i - 1); }
+      });
+      let tx = null;
+      story.addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, { passive: true });
+      story.addEventListener("touchend", e => { if (tx == null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 60) go(i + (dx < 0 ? 1 : -1)); tx = null; });
+      applySize();
+      const hash = location.hash.slice(1).replace(/-\d+$/, "");
+      const start = hash ? mem.findIndex(m => m.place === hash) : 0;
+      go(start < 0 ? 0 : start);
+      addEventListener("resize", () => go(i));
+    }).catch(e => WW.loreError(story, e));
+  }
+
+  /* =========================================================
      STRONA MIEJSCA  (miejsce.html?id=…)
      ========================================================= */
   const placeBox = $("#placePage");
   if (placeBox) {
     const id = new URLSearchParams(location.search).get("id");
-    L.places().then(places => {
+    Promise.all([L.places(), memories().catch(() => [])]).then(([places, mem]) => {
       const i = Math.max(0, places.findIndex(p => p.id === id)), loc = places[i];
+      const mine = mem.filter(m => m.place === loc.id);
       const prev = places[(i - 1 + places.length) % places.length], next = places[(i + 1) % places.length];
       document.title = `${loc.name} — Whitewood`;
-      const [x, y] = loc.points[0] || [50, 50], s = 3;
-      const bx = Math.min(100, Math.max(0, (x * s - 50) / (s - 1))), by = Math.min(100, Math.max(0, (y * s - 50) / (s - 1)));
+      const [x, y] = loc.points[0] || [50, 50];
+      let s = 3;
+      let bx = Math.min(100, Math.max(0, (x * s - 50) / (s - 1))), by = Math.min(100, Math.max(0, (y * s - 50) / (s - 1)));
       const lead = loc.sections.find(sec => sec.title.toLowerCase() === "opis" && !sec.gm);
       const pub = loc.sections.filter(sec => sec !== lead && !sec.gm), gm = loc.sections.filter(sec => sec.gm);
       placeBox.innerHTML = `
@@ -512,6 +608,7 @@
           <div class="ppage__main">
             ${lead ? `<div class="ppage__lead">${lead.html}</div>` : ""}
             ${pub.map(sec => `<section class="doc__sec"><h2>${esc(sec.title)}</h2><div class="doc__body">${sec.html}</div></section>`).join("")}
+            ${mine.map(m => `<blockquote class="memory"><p class="memory__who">Jak pamięta to Jack · <a href="opowiesc.html#${encodeURIComponent(loc.id)}">czytaj na głos →</a></p><h3>${esc(m.title)}</h3>${m.html}</blockquote>`).join("")}
             ${loc.tags.length ? `<ul class="place__tags">${loc.tags.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
           </div>
           ${gm.length ? `<aside class="ppage__gm"><p class="ppage__gm-head">Notatki prowadzącego ${gmTag}</p>
@@ -524,11 +621,15 @@
       // pinezka: pozycja punktu w kadrze powiększonej mapy
       const pin = $(".ppage__pin", placeBox), map = $(".ppage__map", placeBox);
       const place = () => {
-        const W = map.clientWidth, H = map.clientHeight, iw = W * s, ih = iw * 1024 / 1536;
+        const W = map.clientWidth, H = map.clientHeight;
+        s = 3 * Math.max(1, (H * 1536 / 1024) / W);
+        const f = frame(x, y, s, W, H); bx = f.bx; by = f.by;
+        map.style.backgroundSize = `${s * 100}% auto`; map.style.backgroundPosition = `${bx}% ${by}%`;
+        const iw = W * s, ih = iw * 1024 / 1536;
         const ox = (W - iw) * bx / 100, oy = (H - ih) * by / 100;
         pin.style.left = (ox + iw * x / 100) + "px"; pin.style.top = (oy + ih * y / 100) + "px";
       };
-      map.style.backgroundSize = `${s * 100}% auto`; place(); addEventListener("resize", place);
+      place(); addEventListener("resize", place);
     }).catch(e => WW.loreError(placeBox, e));
   }
 
@@ -544,9 +645,9 @@
       shop.innerHTML = `<div class="ws__locked"><p>Masz włączony widok gracza.</p><button class="btn btn--gold" type="button">Wróć do widoku twórcy</button></div>`;
       $("button", shop).addEventListener("click", WW.togglePlayerView);
     } else {
-      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.places(), L.dict(), L.gwary()]).then(([todo, osada, powodz, vulpini, swieta, places, dict, gwary]) => {
-        const docs = [osada, powodz, vulpini, swieta, ...places];
-        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : d.file === "swieta" ? "ludy.html#swieta" : `miejsce.html?id=${d.id}` })));
+      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.doc("wspomnienia"), L.places(), L.dict(), L.gwary()]).then(([todo, osada, powodz, vulpini, swieta, wspomnienia, places, dict, gwary]) => {
+        const docs = [osada, powodz, vulpini, swieta, wspomnienia, ...places];
+        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : d.file === "swieta" ? "ludy.html#swieta" : d.file === "wspomnienia" ? "opowiesc.html" : `miejsce.html?id=${d.id}` })));
         const words = dict.filter(r => r.status !== "kanon");
         const gwWords = gwary.filter(r => r.status !== "kanon");
         const gmCount = places.map(p => ({ p, n: p.sections.filter(s => s.gm).length }));
