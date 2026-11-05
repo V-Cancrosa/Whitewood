@@ -82,8 +82,7 @@ Na zmianę barter i prosta lokalna moneta. Do tego przyjmuje się monetę imperi
 - **Jesień, `dolgali`, Radość Ziemi.** Dożynki. Plony, przetwory i wielki stół na Rynku.
 - **Zima, `strigga`, Noc Głęboka.** Najdłuższa noc. Ursine idą spać, Tortle się budzą, a osada czuwa do świtu przy opowieściach Sów.
 - **Święto ras, Vulpini: Zejście.** Ukryta ceremonia prawdziwego imienia w najgłębszej części rodzinnej nory. Szczegóły na stronie Postacie, w „Imionach Vulpinów”.
-- [?] **Święto ras, Loxodoni:** Dzień Pamięci.
-- [?] **Święto ras, Gallusy:** prowadzą kalendarz wszystkich świąt i pilnują, żeby nikt nie zapomniał.
+- **Święta pozostałych ras:** szkice dla każdej rasy są na stronie Ludy, w części „Święta ras”.
 
 ## Układ osady
 

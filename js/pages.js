@@ -128,9 +128,10 @@
   $$("[data-doc]").forEach(box => {
     L.doc(box.dataset.doc).then(doc => {
       const layout = box.dataset.layout || "article";
-      const title = $("[data-doc-title]"); if (title && doc.name) title.textContent = doc.name;
+      const scope = box.closest("section") || document;
+      const title = $("[data-doc-title]", scope); if (title && doc.name) title.textContent = doc.name;
       const lead = doc.sections[0];
-      const leadBox = $("[data-doc-lead]");
+      const leadBox = $("[data-doc-lead]", scope);
       let secs = doc.sections;
       if (leadBox && lead && !lead.gm) { leadBox.innerHTML = lead.html; secs = doc.sections.slice(1); }
       if (layout === "cards") {
@@ -534,9 +535,9 @@
       shop.innerHTML = `<div class="ws__locked"><p>Masz włączony widok gracza.</p><button class="btn btn--gold" type="button">Wróć do widoku twórcy</button></div>`;
       $("button", shop).addEventListener("click", WW.togglePlayerView);
     } else {
-      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.places(), L.dict()]).then(([todo, osada, powodz, vulpini, places, dict]) => {
-        const docs = [osada, powodz, vulpini, ...places];
-        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : `miejsce.html?id=${d.id}` })));
+      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.places(), L.dict()]).then(([todo, osada, powodz, vulpini, swieta, places, dict]) => {
+        const docs = [osada, powodz, vulpini, swieta, ...places];
+        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : d.file === "swieta" ? "ludy.html#swieta" : `miejsce.html?id=${d.id}` })));
         const words = dict.filter(r => r.status !== "kanon");
         const gmCount = places.map(p => ({ p, n: p.sections.filter(s => s.gm).length }));
         const empty = places.filter(p => p.status === "do opisania");
