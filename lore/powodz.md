@@ -41,7 +41,7 @@ Nie przyszła nagle. Najpierw były długie deszcze, potem wzbierające strumien
 
 **Brzoza.** Jej system korzeniowy utrzymał grunt, wyłapywał osady i kamienie, stabilizując wyspę. Drzewo rosło dalej, aż przybrało formę bliższą dębowi niż brzozie. Wokół niego odbudowano osadę, która przyjęła nazwę Whitewood.
 
-**Nora Leothernów.** Woda ją ominęła. Leothernowie otworzyli wejścia, nie pytając, kim są przybywający ani skąd pochodzą. Ranni, przemoczeni, wypchnięci z domów: wszyscy znaleźli tam miejsce. W zamian Leothernowie prosili tylko o wiedzę i tak powstała biblioteka rodu.
+**Nora Thorlenów.** Woda ją ominęła. Thorlenowie otworzyli wejścia, nie pytając, kim są przybywający ani skąd pochodzą. Ranni, przemoczeni, wypchnięci z domów: wszyscy znaleźli tam miejsce. W zamian Thorlenowie prosili tylko o wiedzę i tak powstała biblioteka rodu.
 
 ## Świat po Powodzi
 

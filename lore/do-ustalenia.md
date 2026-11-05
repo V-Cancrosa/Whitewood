@@ -44,8 +44,13 @@ Ustalone: warownię zbudowała dziwna rodzina, mimo obiekcji społeczności. Wsz
 
 Ustalone: każdy Vulpin ma imię potoczne (Jack) i prawdziwe (Leothern). Prawdziwego nie używa się jak nazwiska. Używa się go tylko w rodzinie, a między Vulpinami bardzo rzadko. Prawdziwe imiona w jednym rodzie zaczynają się na tę samą literę: w rodzie Jacka na L, w innym rodzie np. na P. Szczegóły są w `lore/vulpini.md`.
 
-- [ ] **Jak nazywać ród Jacka i jego norę na zewnątrz?** Mapa mówi „Nory Leothernów”. Dopóki to nie jest ustalone, na stronie zostaje „Nory Leothernów” i „Leothernowie”.
+Ustalone: nazwa potoczna rodu to anagram prawdziwego imienia protoplasty, które jest zarazem prawdziwym imieniem rodu. Protoplasta miał to samo prawdziwe imię co Jack (sekret MG). Święto Vulpinów to Zejście: ceremonia prawdziwego imienia w najgłębszej części nory, w której lisię się urodziło.
+
+- [ ] **Anagram:** propozycja Thorlene (Thorlenowie, Nory Thorlenów). Inne możliwości: Lethoren, Northele, Holtener, Ethelorn, Rothelen.
+- [ ] **Podpis na mapie:** grafika mówi „Nory Leothernow”, a powinna mówić o wybranym anagramie.
+- [ ] **Ceremonia Zejścia:** szczegóły (spór, cisza, pieczęć, dar, `lanel`) czekają jako propozycje w `lore/vulpini.md`.
 - [ ] Poprawić tabelę imion w dokumencie Birdfolk v2 („`!leothern!` = imię rodowe”).
+- Zasada strony: niczyjego prawdziwego imienia nie pokazujemy graczom.
 
 ## Święta ras
 

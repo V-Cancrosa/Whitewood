@@ -190,3 +190,4 @@ html[data-mode="tworca"] .nav__key { color: #e1a07a; border-color: rgba(179,84,4
 .vulpin-doc > h3 { font-size: clamp(26px, 3vw, 36px); text-align: center; }
 .vulpin-doc .doc__sec { padding-top: 34px; }
 .vulpin-doc .doc__sec h2 { font-size: clamp(20px, 2vw, 26px); }
+.names { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }

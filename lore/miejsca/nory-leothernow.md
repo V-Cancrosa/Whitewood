@@ -1,6 +1,6 @@
 ---
 id: nory-leothernow
-nazwa: Nory Leothernów
+nazwa: Nory Thorlenów
 birdfolk: —
 birdfolk_znaczenie: nazwa do ustalenia (zob. Imiona Vulpinów)
 typ: Dawna kopalnia
@@ -11,9 +11,9 @@ tagi: Vulpini, biblioteka, nory
 
 ## Opis
 
-Porzucony szyb kopalniany przy granicy Lasu, odzyskany — nie wykuty — przez ród Vulpinów Leothern. W czasie Powodzi Tysiąclecia woda go ominęła, a jego drzwi pozostały otwarte dla każdego.
+Porzucony szyb kopalniany przy granicy Lasu, odzyskany — nie wykuty — przez ród Vulpinów, Thorlenów. W czasie Powodzi Tysiąclecia woda go ominęła, a jego drzwi pozostały otwarte dla każdego.
 
-W zamian za schronienie Leothernowie prosili tylko o wiedzę. Tak powstała biblioteka rodu: notatki zielarskie, dawne trasy handlowe, szkice instrumentów — i skrzypce, które nie miały już do kogo wrócić.
+W zamian za schronienie Thorlenowie prosili tylko o wiedzę. Tak powstała biblioteka rodu: notatki zielarskie, dawne trasy handlowe, szkice instrumentów — i skrzypce, które nie miały już do kogo wrócić.
 
 ## Co tam jest
 

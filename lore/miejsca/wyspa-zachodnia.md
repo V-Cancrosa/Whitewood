@@ -15,7 +15,7 @@ Jedna z dwóch głównych części osady. Gęsta zabudowa, mostami spięta z Ryn
 
 ## Co tam jest
 
-- **Zakusy: stara strona.** Bliżej Nor Leothernów i dawnych kopalń. Najstarsze rody, domy wrośnięte w najstarsze brzozy, gniazda piętrzące się po trzy, cztery poziomy.
+- **Zakusy: stara strona.** Bliżej Nor Thorlenów i dawnych kopalń. Najstarsze rody, domy wrośnięte w najstarsze brzozy, gniazda piętrzące się po trzy, cztery poziomy.
 - Tkacze, garncarze i zielarze. Mniej hałasu niż na Wschodniej, więcej rozmów na progach.
 - Tu mieszka najwięcej tych, którzy na Imperium mówią `ne-kören`, ale imperialne monety i tak trzymają w skrzyni.
 

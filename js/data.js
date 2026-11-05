@@ -33,7 +33,7 @@ WW.timeline = [
   {
     era: "Epoka Wydobycia",
     title: "Kopalnie i granica Lasu",
-    text: "Im bliżej Lasu, tym bogatsze złoża — i tym więcej wypadków, których nie dało się wyjaśnić. Zaczęto mówić, że Las tego nie pożąda. Whitewood wybrało handel z elfami zamiast eskalacji. Porzucone szyby zasiedlili Vulpini, wśród nich ród Leothern."
+    text: "Im bliżej Lasu, tym bogatsze złoża — i tym więcej wypadków, których nie dało się wyjaśnić. Zaczęto mówić, że Las tego nie pożąda. Whitewood wybrało handel z elfami zamiast eskalacji. Porzucone szyby zasiedlili Vulpini, wśród nich ród Thorlenów."
   },
   {
     era: "Rok zero",
@@ -133,7 +133,7 @@ WW.characters = [
   { name: "Jack", race: "Vulpin", role: "Mnich Otwartej Dłoni", initial: "J", text: "Lis rudy, wychowany w norze-bibliotece rodu. Wędrowny mediator, tancerz i bajkopisarz z kalimbą. Wyruszył, by zdobyć wiedzę potrzebną do wprowadzenia harmonii w rodzinnej wiosce.", quote: "!jack! — imię potoczne" }
 ];
 
-/* ---------- ETOS LEOTHERNÓW ---------- */
+/* ---------- ETOS THORLENÓW ---------- */
 WW.ethos = [
   "pomoc nie daje prawa do kontroli",
   "wiedza nie jest towarem, dopóki ktoś jej potrzebuje",
