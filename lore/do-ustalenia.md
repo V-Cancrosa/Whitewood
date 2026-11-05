@@ -36,8 +36,20 @@ Ustalone: **Wyspa Zachodnia i Wyspa Wschodnia tworzą główne części osady.**
 
 Ustalone: warownię zbudowała dziwna rodzina, mimo obiekcji społeczności. Wszyscy ją tolerują, bo jest przydatna.
 
-- [ ] Propozycja: ród Tortle, kamieniarze, „to tylko wysoka podmurówka” (do zatwierdzenia)
+- [x] Ród Tortle (Galnowie), kamieniarze, „to tylko wysoka podmurówka”
+- [ ] Prawdziwe nazwisko Galnów
 - [ ] Czy w Whitewood jest ktoś z Imperium na stałe, czy urzędnicy tylko przyjeżdżają?
+
+## Imiona Vulpinów
+
+Ustalone: każdy Vulpin ma imię potoczne (Jack) i prawdziwe (Leothern). Prawdziwego nie używa się jak nazwiska. Używa się go tylko w rodzinie, a między Vulpinami bardzo rzadko. Prawdziwe imiona w jednym rodzie zaczynają się na tę samą literę: w rodzie Jacka na L, w innym rodzie np. na P. Szczegóły są w `lore/vulpini.md`.
+
+- [ ] **Jak nazywać ród Jacka i jego norę na zewnątrz?** Mapa mówi „Nory Leothernów”. Dopóki to nie jest ustalone, na stronie zostaje „Nory Leothernów” i „Leothernowie”.
+- [ ] Poprawić tabelę imion w dokumencie Birdfolk v2 („`!leothern!` = imię rodowe”).
+
+## Święta ras
+
+Ustalone: każda z ras ma swoje mniejsze i większe święta. Treść do wymyślenia później, zwłaszcza dla Vulpinów. W `lore/osada.md` czekają trzy szkice z `[?]`.
 
 ## Wiara
 

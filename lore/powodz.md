@@ -7,7 +7,7 @@ status: kanon
 
 <!--
 Pełna strona o Powodzi. Ten sam format co inne pliki lore:
-„## Tytuł” = sekcja, „## Tytuł · MG” = notatka prowadzącego, „[?]” = propozycja.
+„## Tytuł” = sekcja, „## Tytuł · MG” = notatka prowadzącego, „” = propozycja.
 Pierwsza sekcja to wstęp.
 -->
 
@@ -65,7 +65,7 @@ Nic z tego nie jest pewne. To wierzenie, może półprawda. Ale Przemieńcowe za
 
 Data Powodzi jest dość mocno szacowana na konkretny dzień w roku. Tego dnia Whitewood obchodzi swoje najważniejsze święto: coś jak Wszystkich Świętych, ale weselsze, bo to społeczność, która opiera się na radości.
 
-[?] Nazywa się `silungal`. Wieczorem puszcza się na wodę łódeczki z kory brzozowej ze światełkiem, po jednej za każdego, kogo zabrała woda. Światła mają pokazać drogę tym, którzy jeszcze idą. Potem jest muzyka, jedzenie i opowieści o zmarłych, ale tylko te zabawne.
+Nazywa się `silungal`. Wieczorem puszcza się na wodę łódeczki z kory brzozowej ze światełkiem, po jednej za każdego, kogo zabrała woda. Światła mają pokazać drogę tym, którzy jeszcze idą. Potem jest muzyka, jedzenie i opowieści o zmarłych, ale tylko te zabawne.
 
 ## Otwarte pytania · MG
 

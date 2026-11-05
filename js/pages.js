@@ -534,9 +534,9 @@
       shop.innerHTML = `<div class="ws__locked"><p>Masz włączony widok gracza.</p><button class="btn btn--gold" type="button">Wróć do widoku twórcy</button></div>`;
       $("button", shop).addEventListener("click", WW.togglePlayerView);
     } else {
-      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.places(), L.dict()]).then(([todo, osada, powodz, places, dict]) => {
-        const docs = [osada, powodz, ...places];
-        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : `miejsce.html?id=${d.id}` })));
+      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.places(), L.dict()]).then(([todo, osada, powodz, vulpini, places, dict]) => {
+        const docs = [osada, powodz, vulpini, ...places];
+        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : `miejsce.html?id=${d.id}` })));
         const words = dict.filter(r => r.status !== "kanon");
         const gmCount = places.map(p => ({ p, n: p.sections.filter(s => s.gm).length }));
         const empty = places.filter(p => p.status === "do opisania");

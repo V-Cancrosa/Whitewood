@@ -15,9 +15,9 @@ Jedna z dwóch głównych części osady. Gęsta zabudowa, mostami spięta z Ryn
 
 ## Co tam jest
 
-- [?] **Zakusy: stara strona.** Bliżej Nor Leothernów i dawnych kopalń. Najstarsze rody, domy wrośnięte w najstarsze brzozy, gniazda piętrzące się po trzy, cztery poziomy.
-- [?] Tkacze, garncarze i zielarze. Mniej hałasu niż na Wschodniej, więcej rozmów na progach.
-- [?] Tu mieszka najwięcej tych, którzy na Imperium mówią `ne-kören`, ale imperialne monety i tak trzymają w skrzyni.
+- **Zakusy: stara strona.** Bliżej Nor Leothernów i dawnych kopalń. Najstarsze rody, domy wrośnięte w najstarsze brzozy, gniazda piętrzące się po trzy, cztery poziomy.
+- Tkacze, garncarze i zielarze. Mniej hałasu niż na Wschodniej, więcej rozmów na progach.
+- Tu mieszka najwięcej tych, którzy na Imperium mówią `ne-kören`, ale imperialne monety i tak trzymają w skrzyni.
 
 ## Historia
 
@@ -31,4 +31,3 @@ Jedna z dwóch głównych części osady. Gęsta zabudowa, mostami spięta z Ryn
 
 ## Otwarte pytania · MG
 
-- Kto tu mieszka? Czym zachodnia różni się od wschodniej (rasy, zajęcia, stosunek do Imperium)?

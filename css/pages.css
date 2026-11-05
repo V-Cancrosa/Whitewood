@@ -184,3 +184,9 @@ html[data-mode="tworca"] .nav__key { color: #e1a07a; border-color: rgba(179,84,4
 .footer__nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin-bottom: 40px; }
 .footer__nav a { font-family: var(--f-display); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
 .footer__nav a:hover { color: var(--gold-2); }
+
+/* ---------- imiona Vulpinów (postacie) ---------- */
+.vulpin-doc { max-width: 780px; margin: clamp(50px, 7vw, 90px) auto 0; position: relative; }
+.vulpin-doc > h3 { font-size: clamp(26px, 3vw, 36px); text-align: center; }
+.vulpin-doc .doc__sec { padding-top: 34px; }
+.vulpin-doc .doc__sec h2 { font-size: clamp(20px, 2vw, 26px); }

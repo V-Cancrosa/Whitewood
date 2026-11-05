@@ -130,7 +130,7 @@ WW.characters = [
   { name: "Oga Kornik", race: "Loxodon", role: "Ogä — przywódca Whitewood", initial: "K", text: "Stary Loxodon, który wiedzie i zakorzenia. „Kornik” to przydomek, nie rasa — ktoś, kto nie burzy struktury, lecz drąży ją i wzmacnia od środka. Próbuje utrzymać równowagę między zwolennikami Imperium a strażnikami dawnego porządku.", quote: "kornik = ogä" },
   { name: "Alastor", race: "Zwiastun Imperium", role: "Opiekun Vetory", initial: "A", text: "Wysłannik przydzielony do sprawowania pieczy nad Vetorą. Wcielenie Whitewood okazało się trudniejsze, niż przypuszczał — nikt w osadzie nie znał języka Imperium.", quote: "inyteratoor" },
   { name: "Aeliana", race: "Corvum", role: "Kruczyca, muzyczka", initial: "Æ", text: "Krukowata z Whitewood, z którą Jack grał w duecie. Jej imię zaczyna się od samogłoski — jeden z nielicznych wyjątków od reguł Birdfolka.", quote: "!aeliana! sal-ło: gali galsen." },
-  { name: "Jack Leothern", race: "Vulpin", role: "Mnich Otwartej Dłoni", initial: "J", text: "Lis rudy z rodu Leothernów, wychowany w norze-bibliotece. Wędrowny mediator, tancerz i bajkopisarz z kalimbą. Wyruszył, by zdobyć wiedzę potrzebną do wprowadzenia harmonii w rodzinnej wiosce.", quote: "!jack! durtan-in !leothern!" }
+  { name: "Jack", race: "Vulpin", role: "Mnich Otwartej Dłoni", initial: "J", text: "Lis rudy, wychowany w norze-bibliotece rodu. Wędrowny mediator, tancerz i bajkopisarz z kalimbą. Wyruszył, by zdobyć wiedzę potrzebną do wprowadzenia harmonii w rodzinnej wiosce.", quote: "!jack! — imię potoczne" }
 ];
 
 /* ---------- ETOS LEOTHERNÓW ---------- */

@@ -29,4 +29,3 @@ Handel z Imperium pozostaje mocno ograniczony; od wieków najważniejszym partne
 
 ## Otwarte pytania · MG
 
-- `dontarol` to propozycja złożona z reguł Birdfolka (dontar + -ol) — do zatwierdzenia.

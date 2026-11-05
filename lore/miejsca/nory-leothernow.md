@@ -1,8 +1,8 @@
 ---
 id: nory-leothernow
 nazwa: Nory Leothernów
-birdfolk: !leothern!-or tan
-birdfolk_znaczenie: dom Leothernów
+birdfolk: —
+birdfolk_znaczenie: nazwa do ustalenia (zob. Imiona Vulpinów)
 typ: Dawna kopalnia
 mapa: 13, 77
 status: kanon
