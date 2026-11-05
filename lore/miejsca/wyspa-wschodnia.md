@@ -15,6 +15,11 @@ Jedna z dwóch głównych części osady. Rozległa wyspa na skraju brzozowego l
 
 ## Co tam jest
 
+- [?] **Zakusy: otwarta strona.** Bliżej lasu i elfów, sąsiaduje z Warownią Galnów. Więcej przybyszów z Drugiego Kręgu, więcej nowych pomysłów.
+- [?] Kuźnie na kamiennych podmurówkach i hałaśliwi kowale. Tu najgłośniej kłóci się o imperialne narzędzia.
+- [?] Gospoda dla gości z zewnątrz: elfich kupców, wędrowców i rzadkich imperialnych urzędników.
+- [?] Cervani prowadzą stąd szlaki do lasu.
+
 ## Historia
 
 ## Na głos · MG

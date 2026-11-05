@@ -16,14 +16,27 @@
       .replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>")
       .replace(/(^|[\s(])_([^_]+)_(?=[\s.,;:)!?]|$)/g, "$1<em>$2</em>");
   }
+  // „[?]” na początku akapitu lub punktu listy = propozycja do zatwierdzenia
+  const PROP = /^\[\?\]\s*/;
   function md(text) {
     const out = []; let list = null, para = [];
-    const flushP = () => { if (para.length) { out.push(`<p>${inline(para.join(" "))}</p>`); para = []; } };
-    const flushL = () => { if (list) { out.push(`<ul>${list.map(li => `<li>${li}</li>`).join("")}</ul>`); list = null; } };
+    const flushP = () => {
+      if (!para.length) return;
+      let t = para.join(" "); const prop = PROP.test(t); t = t.replace(PROP, "");
+      out.push(`<p${prop ? ' class="prop"' : ""}>${inline(t)}</p>`); para = [];
+    };
+    const flushL = () => {
+      if (!list) return;
+      out.push(`<ul>${list.map(li => `<li${li.prop ? ' class="prop"' : ""}>${li.html}</li>`).join("")}</ul>`); list = null;
+    };
     for (const raw of text.split("\n")) {
       const line = raw.trim();
       const m = line.match(/^[-*]\s+(?:\[( |x)\]\s+)?(.*)$/);
-      if (m) { flushP(); (list ||= []).push((m[1] ? `<span class="chk${m[1] === "x" ? " chk--done" : ""}"></span>` : "") + inline(m[2])); }
+      if (m) {
+        flushP();
+        const prop = PROP.test(m[2]);
+        (list ||= []).push({ prop, html: (m[1] ? `<span class="chk${m[1] === "x" ? " chk--done" : ""}"></span>` : "") + inline(m[2].replace(PROP, "")) });
+      }
       else if (!line) { flushP(); flushL(); }
       else { flushL(); para.push(line); }
     }
