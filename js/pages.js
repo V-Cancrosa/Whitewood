@@ -135,12 +135,12 @@
       let secs = doc.sections;
       if (leadBox && lead && !lead.gm) { leadBox.innerHTML = lead.html; secs = doc.sections.slice(1); }
       if (layout === "cards") {
-        box.innerHTML = secs.map(s => `<article class="settle__card${s.gm ? " settle__card--gm" : ""}" id="${s.id}">
+        box.innerHTML = secs.map(s => `<article class="settle__card${s.gm ? " settle__card--gm" : ""}${s.prop ? " is-prop" : ""}" id="${s.id}">
           <h3>${esc(s.title)}${s.gm ? " " + gmTag : ""}</h3><div class="settle__body">${s.html}</div></article>`).join("");
       } else {
-        box.innerHTML = (doc.intro ? `<div class="doc__intro">${doc.intro}</div>` : "") + secs.map(s => `<section class="doc__sec${s.gm ? " doc__sec--gm" : ""}" id="${s.id}">
+        box.innerHTML = (doc.intro ? `<div class="doc__intro">${doc.intro}</div>` : "") + secs.map(s => `<section class="doc__sec${s.gm ? " doc__sec--gm" : ""}${s.prop ? " is-prop" : ""}" id="${s.id}">
           <h2>${esc(s.title)}${s.gm ? " " + gmTag : ""}</h2><div class="doc__body">${s.html}</div></section>`).join("");
-        const toc = $("[data-doc-toc]");
+        const toc = $("[data-doc-toc]", scope);
         if (toc) toc.innerHTML = secs.map(s => `<a href="#${s.id}"${s.gm ? ' class="is-gm"' : ""}>${esc(s.title)}</a>`).join("");
       }
       box.classList.add("reveal-stagger"); WW.reveal(box.parentNode);
@@ -645,9 +645,9 @@
       shop.innerHTML = `<div class="ws__locked"><p>Masz włączony widok gracza.</p><button class="btn btn--gold" type="button">Wróć do widoku twórcy</button></div>`;
       $("button", shop).addEventListener("click", WW.togglePlayerView);
     } else {
-      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.doc("wspomnienia"), L.places(), L.dict(), L.gwary()]).then(([todo, osada, powodz, vulpini, swieta, wspomnienia, places, dict, gwary]) => {
-        const docs = [osada, powodz, vulpini, swieta, wspomnienia, ...places];
-        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : d.file === "swieta" ? "ludy.html#swieta" : d.file === "wspomnienia" ? "opowiesc.html" : `miejsce.html?id=${d.id}` })));
+      Promise.all([L.doc("do-ustalenia"), L.doc("osada"), L.doc("powodz"), L.doc("vulpini"), L.doc("swieta"), L.doc("wspomnienia"), L.doc("postacie"), L.doc("kalendarz"), L.places(), L.dict(), L.gwary()]).then(([todo, osada, powodz, vulpini, swieta, wspomnienia, postacie, kalendarz, places, dict, gwary]) => {
+        const docs = [osada, powodz, vulpini, swieta, wspomnienia, postacie, kalendarz, ...places];
+        const props = docs.flatMap(d => d.props.map(p => ({ ...p, href: d.file === "osada" ? "osada.html" : d.file === "powodz" ? "powodz.html" : d.file === "vulpini" ? "postacie.html" : d.file === "swieta" ? "ludy.html#swieta" : d.file === "wspomnienia" ? "opowiesc.html" : d.file === "postacie" ? "postacie.html" : d.file === "kalendarz" ? "osada.html#kalendarz" : `miejsce.html?id=${d.id}` })));
         const words = dict.filter(r => r.status !== "kanon");
         const gwWords = gwary.filter(r => r.status !== "kanon");
         const gmCount = places.map(p => ({ p, n: p.sections.filter(s => s.gm).length }));

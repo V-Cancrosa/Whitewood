@@ -21,13 +21,19 @@ Las rośnie. Vetora odzyskuje siłę, a jej granice przesunęły się tak, że W
 - **Ishni** — wielki jednorożec, strażnik Vetory. Pilnuje, by nekromancja i inne nieczyste siły nie dobrały się do lasów.
 - Bardzo stara magia, która zmienia faunę i florę.
 
+- **Szlaki**: Cervani prowadzą wyprawy od Bramy Szlaków na Wschodniej: po zioła, drewno na wymianę i na spotkania z elfimi kupcami przy `kakren`. Ścieżki trzeba co jakiś czas wyznaczać od nowa, bo las je zabiera.
+
 ## Historia
 
 Whitewood wybrało pragmatyzm: handel z elfami, choć drogi, był rozsądniejszy niż dalsze ryzyko w kopalniach. Granica lasu elfickiego ma w Birdfolku własne słowo — `kakren`, „drzewa poza kręgiem”.
 
 ## Na głos · MG
 
+Brzezina kończy się nagle, jakby ktoś narysował linię. Za nią drzewa są ciemniejsze, starsze i stoją gęściej, a ich korony zamykają się nad głową. Hałas osady gaśnie po kilkunastu krokach. Ptaki milkną. Coś przez chwilę porusza się równolegle do was, po drugiej stronie paproci, i znika, zanim zdążycie się odwrócić.
+
 ## Zmysły · MG
+
+Żywica gęstsza i ostrzejsza niż brzozowa. Wilgotna ziemia, grzyby, chłód nawet w południe. Cisza, która nie jest pusta.
 
 ## Mieszkańcy · MG
 
@@ -35,6 +41,12 @@ Whitewood wybrało pragmatyzm: handel z elfami, choć drogi, był rozsądniejszy
 
 - Las zdaje się wybierać cele: bestie potrafią obwąchać mieszkańca Vetory i zaatakować obcego.
 
+- Wielkie Stado przechodzi blisko osady, bliżej niż kiedykolwiek. Elfy proszą o pozwolenie na przejście przez pola. To pierwsza taka prośba w historii.
+- Ślady wielkiego kopyta przy granicy, a obok coś, co wygląda jak ślad walki. Czy Ishni z czymś walczył?
+- Las zaczyna rosnąć na porzuconych polach, ale omija uprawiane z pokolenia na pokolenie. Ktoś porzucił pole celowo, żeby sprawdzić, co się stanie.
+
 ## Otwarte pytania · MG
 
 - Dlaczego las się rozszerza?
+
+- Jak mieszkańcy traktują Ishniego: czczą, boją się, czy po prostu wiedzą, że jest?

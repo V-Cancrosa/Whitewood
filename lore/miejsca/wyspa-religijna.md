@@ -17,17 +17,27 @@ W Whitewood nie ma zakonów. Są miejsca i są ci, którzy o nie dbają.
 
 ## Co tam jest
 
-- Kapliczki — część starsza, część imperialna.
+- **Stare kapliczki bez imion** (`nesal-körentanko`, „kapliczki bez mowy”): drewniane, przy korzeniach, z podarkami z kory, piór i kamyków. Nikt nie mówi głośno, komu są poświęcone, i nie wiadomo, czy ktoś jeszcze wie.
+- **Imperialne kapliczki**: kamienne, z inskrypcjami i imionami bogów Imperium. O część dbają przybysze, o część nikt.
+- **Opiekunowie bez zakonu** (`silunat`, „ci od spokoju”): kilku mieszkańców różnych ras, którzy zamiatają ścieżki, zbierają stare podarki i pilnują, żeby nikt nie przestawiał cudzych rzeczy.
 
 ## Historia
 
 ## Na głos · MG
 
+Most na tę wyspę jest najdłuższy i najwęższy, jakby ktoś chciał, żeby po drodze zdążyć się zastanowić. Po drugiej stronie stoją dwa rodzaje kapliczek: niskie, drewniane, porośnięte mchem, których nikt nie podpisał, i kamienne, równe, z napisami wielkimi literami. Między nimi wydeptane ścieżki, a przy każdej ktoś zostawił coś małego.
+
 ## Zmysły · MG
+
+Wosk, mech, mokry kamień. Cisza inna niż w lesie: tu milknie się, bo ktoś mógłby słuchać. Pod nogami chrzęści drobny żwir, którego nie ma nigdzie indziej w osadzie, bo przywiozło go Imperium.
 
 ## Mieszkańcy · MG
 
 ## Haczyki · MG
+
+- Nowa imperialna kapliczka stanęła w nocy przy ścieżce, którą chodzi się nad wodę na Dzień Ukojenia. Konserwatyści (`ne-kören`) chcą ją przenieść, Imperium nie pozwoli.
+- Ktoś zabiera podarki ze starych kapliczek. Opiekunowie podejrzewają dzieci, ale ślady są zbyt duże.
+- Przemieńcowy Szlam pełznie przez osadę prosto na wyspę. Dokąd zmierza i dlaczego akurat tam?
 
 ## Otwarte pytania · MG
 

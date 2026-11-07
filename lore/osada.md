@@ -57,7 +57,7 @@ Imperium długo było gdzieś dalej. Mogło sobie być, nikt go nie potrzebował
 
 Przyniosło dużo możliwości, ale też dużo rzeczy, których społeczność nie chciała, bo stawały się nowymi problemami: społecznymi, ekonomicznymi i innymi.
 
-- **Możliwości:** imperialne księgi i medycyna, narzędzia z lepszej stali, drogi, kupcy z dalekich stron, szansa dla młodych.
+- **Możliwości:** imperialne księgi i medycyna, narzędzia z lepszej stali, drogi, kupcy z dalekich stron, szansa dla młodych, a przede wszystkim chętny skup kamieni runicznych. Każda zmiana imperialnego popytu na `karorko` odbija się w osadzie od razu.
 - **Problem:** młodzi odchodzą do miast i nie zawsze wracają.
 - **Problem:** tanie imperialne narzędzia podcinają rzemieślników Mapach.
 - **Problem:** imperialne prawo chce papieru na ziemię, a w Whitewood ziemię ma się przez Krąg, nie przez akt.
@@ -65,12 +65,13 @@ Przyniosło dużo możliwości, ale też dużo rzeczy, których społeczność n
 
 ## Pieniądz
 
-Na zmianę barter i prosta lokalna moneta. Do tego przyjmuje się monetę imperialną. Nawet ktoś, kto nie chce Imperium, weźmie imperialne monety, żeby wymienić się z kimś ze społeczności, kto Imperium woli.
+Barter, a jako miara dzień pracy (`galkat`): „to warte dwa dni pracy przy sieciach”.
 
-- Lokalną monetę nazywa się po prostu `karorko`, „mały metal”, czyli „moneta”. Imperialną nazywa się po imperialnemu, bo to obca rzecz.
-- Karorko to brązowy krążek z dziurką, noszony na sznurku. Bogactwo liczy się w sznurkach (`karorkor`, „krąg monet”).
-- W barterze miarą jest **dzień pracy** (`galkat`): „to warte dwa dni pracy przy sieciach”.
-- Kurs imperialnej monety do karorko ustala się codziennie na Rynku, a kłótnie o kurs to ulubiony sport Mapach. W ich gwarze to *koersgeshrey*.
+Lokalnym środkiem wymiany są `karorko`: **kamienie runiczne**, które w Whitewood występują dość często, z runą żywiołu (woda, ogień, ziemia, powietrze i inne podobne). Imperium chętnie je skupuje i to od nich wychodzi kurs imperialnej monety oraz cała reszta gospodarki z Imperium. Imperialną monetę bierze nawet niechętny Imperium, bo podatki płaci się w niej.
+
+- Kurs ustala się codziennie na Rynku, na Kamieniu kursu (`dontarkar`), osobno dla każdego żywiołu. Kłótnie o kurs to ulubiony sport Mapach. W ich gwarze to *koersgeshrey*.
+- Przy straganach z kamieniami czuć ciepło, chłód albo wilgoć, zależnie od tego, jaki żywioł leży w koszu.
+- [?] Kamień runiczny w Birdfolku to `karlinko`, „mały wycięty kamień”, a żywioł dopisuje się z przodu: `sil-karlinko` (wodny), `ras-karlinko` (ognisty), `dol-karlinko` (ziemny), `hen-karlinko` (powietrzny). Słowo `karorko` („mały metal”) zostało z czasów, gdy płaciło się metalem, i dziś znaczy po prostu „pieniądz”.
 
 ## Święta
 

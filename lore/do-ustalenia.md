@@ -5,7 +5,8 @@ Otwarte pytania i sprzeczności. Gdy coś rozstrzygniesz, przenieś odpowiedź d
 ## Zasady projektu
 
 - **Kanon języka:** Birdfolk v2. Lingua Fauna (stary system z dokumentu „Whitewood”) jest porzucona.
-- **Oga Kornik należy do MG.** Na stronie tylko to, co już wiadomo: Loxodon, „Kornik” to przydomek, pełni rolę Ogi, leczył Silkir-Dolem. Bez dopisywania historii ani motywacji.
+- **Oga Kornik należy do MG.** Na stronie tylko to, co już wiadomo: Grung (żabolud), „Kornik” to przydomek, pełni rolę Ogi, leczył Silkir-Dolem, oraz jego wygląd. Bez dopisywania historii ani motywacji.
+- **Materiał dla MG z 6.11.2026** (Whitewood i Aeliana) jest kanonem. Jego treść jest rozpisana w plikach miejsc, w `lore/osada.md` i w `lore/postacie.md`.
 - **Ton:** baśniowy, ale nie idylla. Spokojna wieś, w której największym zmartwieniem są dzikie zwierzęta i pomniejsze stworki, a raz na długi czas większy potwór. Powódź dorzuca melancholii, ale to społeczność oparta na radości.
 - **Propozycje:** „[?]” na początku akapitu lub punktu. Zatwierdzone: usunąć znacznik.
 - **Każda nowa rzecz dostaje słowa.** Wszystko, co powstaje, od razu dostaje nazwę w Birdfolku (do `lore/slownik.tsv`). Rzecz konkretnej rasy dostaje też słowo w gwarze tej rasy (do `lore/gwary.tsv`). Gwary to osobne języki, ale kilka ich słów zna każdy, tak jak „Ramadan” zna się bez arabskiego.
@@ -87,3 +88,13 @@ Już wpisane do plików miejsc:
 - Las zdaje się wybierać cele
 
 Czeka: dokument z podsumowaniami notatek.
+
+## Z materiału dla MG (6.11.2026)
+
+- [ ] Gdzie leżą porzucone kopalnie i dokąd prowadzi zamurowane zejście pod Warownią?
+- [ ] Skąd biorą się kamienie runiczne, kto je zbiera i co Imperium z nimi robi?
+- [ ] Grungów nie ma w taksonomii Birdfolk v2. Do której rodziny i którego kręgu należą?
+- [ ] Słowo `karorko` znaczy „mały metal”, a to kamienie. Propozycja: nazwa została z czasów metalowych monet i dziś znaczy po prostu „pieniądz” (zob. `lore/osada.md`).
+- [ ] `karorkor` („sznurek monet”) ma status sprzeczność: kamieni nie nosi się na sznurku, chyba że są nawiercane.
+- [ ] Czy Jack wie, że rodzice nie żyją? Czy Aeliana zna sekret protoplasty? Czy dowie się o Vulpince z kalimbą?
+- [ ] Czy w sprawie kury Jack był winny?

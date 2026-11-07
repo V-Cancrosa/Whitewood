@@ -264,3 +264,13 @@ html[data-mode="tworca"] .nav__key { color: #e1a07a; border-color: rgba(179,84,4
 .story__text p { font-size: calc(min(clamp(19px, 1.6vw + 12px, 27px), 3.1vh + 4px) * var(--story-scale)); }
 .story__nav { padding-top: 16px; padding-bottom: 22px; }
 .story__text { -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(to bottom, #000 calc(100% - 36px), transparent); padding-bottom: 24px; }
+
+/* sekcja-propozycja „## Tytuł · ?” */
+.is-prop { position: relative; outline: 1px dashed rgba(229,200,138,.45); outline-offset: 10px; }
+.is-prop::before { content: "propozycja"; position: absolute; top: -20px; right: 0; font-family: var(--f-display); font-size: 9px; letter-spacing: .15em; text-transform: uppercase; color: var(--gold); border: 1px dashed rgba(201,164,92,.5); border-radius: 99px; padding: 0 6px; background: var(--ink); }
+.settle__card.is-prop { outline-offset: -1px; }
+.settle__card.is-prop::before { top: 10px; right: 10px; }
+.calendar .doc-layout { grid-template-columns: 220px minmax(0, 880px); }
+.calendar .md-table td:first-child { color: var(--birch); white-space: nowrap; }
+.calendar .doc__body h3 { margin-top: 28px; color: var(--gold-2); }
+@media (max-width: 900px) { .calendar .doc-layout { grid-template-columns: 1fr; } .calendar .md-table td:first-child { white-space: normal; } }

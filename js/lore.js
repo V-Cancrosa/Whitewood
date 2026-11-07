@@ -82,10 +82,13 @@
       let title = (nl < 0 ? chunk : chunk.slice(0, nl)).trim();
       const content = nl < 0 ? "" : chunk.slice(nl + 1).trim();
       const gm = /·\s*MG\s*$/i.test(title);
-      title = title.replace(/\s*·\s*MG\s*$/i, "");
-      if (!content || content === "—" || (gm && pub)) return;
-      const html = md(content, { pub, props, where: `${meta.nazwa || file} → ${title}` });
-      if (html) sections.push({ title, gm, html, id: slug(title) });
+      const prop = /·\s*\?\s*$/.test(title);          // „## Tytuł · ?” = cała sekcja jest propozycją
+      title = title.replace(/\s*·\s*(MG|\?)\s*$/i, "");
+      if (!content || content === "—" || ((gm || prop) && pub)) return;
+      const where = `${meta.nazwa || file} → ${title}`;
+      if (prop) props.push({ where, text: "cała sekcja „" + title + "”" });
+      const html = md(content, { pub, props: prop ? [] : props, where });
+      if (html) sections.push({ title, gm, prop, html, id: slug(title) });
     });
     const points = (meta.mapa || "").split(";").map(p => p.split(",").map(Number)).filter(p => p.length === 2 && p.every(n => !isNaN(n)));
     return {

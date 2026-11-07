@@ -45,6 +45,8 @@ Lore jest w katalogu **`lore/`**. To tymi plikami wymieniasz się między czatam
 | `lore/wspomnienia.md` | Whitewood, jakie zostawił Jack: teksty do czytania graczom (`## Tytuł [id-miejsca]`) |
 | `lore/vulpini.md` | imiona Vulpinów, Zejście |
 | `lore/swieta.md` | święta ras |
+| `lore/kalendarz.md` | rok w delcie, kiedy i jak często są święta, co wypada teraz |
+| `lore/postacie.md` | rysy postaci (Aeliana, Ulvrik), głównie dla MG |
 | `lore/gwary.tsv` | słowa z gwar ras |
 | `lore/miejsca/*.md` | jedno miejsce = jeden plik; wzór w `_SZABLON.md` |
 | `lore/ustawienia.json` | kolejność miejsc na mapie |
@@ -55,6 +57,7 @@ Oznaczenia w plikach `.md`:
 
 - `## Tytuł · MG`: sekcja widoczna tylko dla twórców.
 - `[?]` na początku akapitu lub punktu: propozycja. Zatwierdzasz ją, usuwając znacznik.
+- `## Tytuł · ?`: cała sekcja jest propozycją (przydatne przy tabelach).
 - `status:` w nagłówku miejsca: `kanon`, `propozycja`, `sprzeczność` albo `do opisania`.
 
 Pozostałe treści (kronika, kodeks, ludy, bestiariusz, postacie) są na razie w `js/data.js`.

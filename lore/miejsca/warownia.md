@@ -31,7 +31,11 @@ To ród Tortle, nazywany w osadzie **Galnami**, od `galna`: w gwarze Tortle to s
 
 ## Na głos · MG
 
+Na skraju Wschodniej, między brzozami, stoi coś, co tu nie pasuje: szara bryła z czerwonym dachem i wieżą, w której oknach nikt nigdy nie stoi. Brama jest zamknięta, ale furta obok otwarta, a z warsztatu za murem dochodzi miarowe stukanie dłuta, równe jak oddech.
+
 ## Zmysły · MG
+
+Pył kamienny, który osiada na sierści i piórach. Chłód murów nawet w upał. W środku cisza grubsza niż w lesie, a w spiżarni zapach suszu i wosku na trzy zimy naprzód.
 
 ## Mieszkańcy · MG
 
@@ -42,6 +46,9 @@ To ród Tortle, nazywany w osadzie **Galnami**, od `galna`: w gwarze Tortle to s
 
 - Pod piwnicami jest stare zejście do zalanych szybów. Galnowie o nim wiedzą, zamurowali je sami i nikomu nie mówią.
 - Gdy przychodzą ulewy i woda rośnie, pół osady nagle przypomina sobie, gdzie mieszkają Galnowie.
+
+- Ktoś z młodych Galnów przychodzi do drużyny po radę, jak powiedzieć głowie rodu, że chce mieszkać w drewnie.
+- Spod zamurowanego zejścia zaczyna sączyć się woda albo dochodzić dźwięk. Galnowie muszą wybrać między sekretem a pomocą z zewnątrz.
 
 ## Otwarte pytania · MG
 

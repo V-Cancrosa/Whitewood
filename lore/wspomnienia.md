@@ -72,7 +72,7 @@ Format: „## Tytuł [id-miejsca]”. Id łączy wspomnienie z miejscem na mapie
 
 [?] My, Vulpini, boga nie mamy. Mamy pamięć i to, co przekazali przodkowie. Ale lubiłem tam chodzić. Cisza na tej wyspie jest inna niż w lesie: las milczy, bo nie chce z tobą rozmawiać, a tam milczy się, bo ktoś mógłby słuchać.
 
-## Dom [nory-leothernow]
+## Dom [nory-thorlenow]
 
 [?] Nasza nora to stary szyb kopalniany przy granicy lasu. Nikt go dla nas nie wykuł. Moi przodkowie go znaleźli, zapytali, czy wolno, i zostali. Sklepienia trzymają do dziś. W czasie Powodzi woda nas ominęła, a drzwi stały otworem dla każdego, kto przyszedł mokry.
 

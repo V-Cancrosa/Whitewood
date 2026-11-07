@@ -7,6 +7,7 @@ status: kanon
 <!--
 Święta poszczególnych ras. Wyświetla się na stronie Ludy, jako karty.
 Pierwsza sekcja to wstęp. Każda kolejna to jedna grupa.
+Kiedy wypadają poszczególne święta: lore/kalendarz.md.
 Każde święto ma nazwę w Birdfolku (`...`) i w gwarze swojej rasy (*kursywa*). Słowa są w lore/slownik.tsv i lore/gwary.tsv.
 To szkice: więcej niż dwa zdania, mniej niż pełna ceremonia (wzór pełnej: Zejście w lore/vulpini.md).
 „” = propozycja, „## Tytuł · MG” = tylko dla twórców.
@@ -24,9 +25,13 @@ Oprócz świąt wspólnych dla całego Whitewood każda z ras ma swoje mniejsze 
 
 **Noc Bez Słowa** · `nesalstrig` · w gwarze: *hljodlail*. W noc nowiu (`silorko`) Sowy nie mówią od zmierzchu do świtu, a osada zwyczajowo cichnie razem z nimi. Owlin medytują na dachach i w koronach. Strig przekazują tej nocy pierwszą wartę młodym: od Noc Bez Słowa młoda sowa ma prawo pohukiwać nocnym kodem.
 
+[?] **Kiedy:** mała Noc Bez Słowa wypada w każdy nów i milkną tylko Sowy. Raz w roku, w pierwszy nów pory ulew, jest wielka Noc Bez Słowa i wtedy cichnie cała osada.
+
 ## Drapieżne · Raptor, Aarakocra
 
 **Pierwszy Lot** · `unenkira` · w gwarze: *rerehaki*. Wiosną młodzi Drapieżni po raz pierwszy wylatują sami poza deltę i muszą wrócić z czymś, czego nikt w Whitewood jeszcze nie widział: piórem, kamieniem, wieścią o nowej ścieżce. O świcie Aarakocra przelatują nad osadą szykiem, z okrzykami, które budzą nawet Gallusy. Nowe ścieżki trafiają potem do wspólnej mapy szlaków (`kiraga`).
+
+[?] **Kiedy:** okno jest co roku wiosną, ale leci tylko młody, który jest gotów, więc bywają wiosny bez lotu.
 
 ## Gallus
 
@@ -40,6 +45,8 @@ Oprócz świąt wspólnych dla całego Whitewood każda z ras ma swoje mniejsze 
 
 **Pieśń Wydr** · `olonsal` · w gwarze: *ottersanga*. Gdy rusza lód albo przychodzi pierwsze ciepło, wodne ptactwo zarzuca pierwszą sieć roku. Pierwszą rybę oddaje się rzece „dla tych pod wodą”. Wieczorem śpiewa się stare pieśni wydr, które opuściły deltę po Powodzi. Słów już nikt czynnie nie używa (`lurn`, `olon`, `akor`), ale wszyscy je rozumieją.
 
+[?] **Kiedy:** w ciepłej delcie lód prawie nie rusza, więc w praktyce to pierwsza sieć po porze ulew, gdy rzeka się klaruje.
+
 ## Vulpini
 
 **Zejście** · `dolkir` · w gwarze: *nomikagé*. Ukryta ceremonia prawdziwego imienia w najgłębszej części rodzinnej nory. Opis jest na stronie Postacie, w części „Imiona Vulpinów”.
@@ -47,6 +54,8 @@ Oprócz świąt wspólnych dla całego Whitewood każda z ras ma swoje mniejsze 
 ## Lupini
 
 **Noc Przysięgi** · `korsilorga` · w gwarze: *ulvaadam*. W pełnię (`silorga`) stado zbiera się na brzegu i odnawia przysięgi więzi. Każdy mówi na głos jedną krzywdę, którą wybacza, i jedną, którą pamięta, bo Lupini nie udają, że zapomnieli. Tej nocy słowo „pies” jest zakazane nawet w cztery oczy. Kończy się wspólnym wyciem, którego nikt w osadzie nie bierze za zły znak.
+
+[?] **Kiedy:** raz w roku, w pierwszą pełnię po Radości Ziemi.
 
 ## Tabaxi
 
